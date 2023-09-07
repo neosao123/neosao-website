@@ -15,16 +15,44 @@ function ModalCareer() {
         name: Yup.string()
             .required("First name is required")
             .matches(
-                /^[A-Za-z\ ]+$/,
-                "First name should only contain alphabetic characters, spaces"
+                /^[A-Za-z\s]+$/,
+                "First name should only contain alphabetic characters and spaces"
             )
             .min(3, "First name must be at least 3 characters")
             .max(50, "First name cannot be longer than 50 characters"),
-        email: Yup.string().email('Invalid email').required('Email is required'),
-        phone: Yup.string().required('Phone is required'),
-        candType: Yup.string().required('Candidate type is required'),
-        resume: Yup.mixed().required('Resume is required'),
-        skills: Yup.string().required('Skills are required'),
+
+        email: Yup.string()
+            .email('Invalid email')
+            .required('Email is required'),
+
+        phone: Yup.string()
+            .matches(
+                /^[+]?[0-9]{1,4}[\s.-]?[0-9]{1,15}$/,
+                'Please enter a valid phone number'
+            )
+            .required('Phone is required'),
+
+        candType: Yup.string()
+            .required('Candidate type is required'),
+
+        resume: Yup.mixed()
+            .test(
+                'is-file-format',
+                'Resume must be in DOCX or PDF format',
+                (value) => {
+                    if (!value) return true; // Empty value is allowed
+                    const allowedFormats = ['application/pdf', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'];
+                    return allowedFormats.includes(value.type);
+                }
+            )
+            .required('Resume is required'),
+
+        skills: Yup.string()
+            .required('Skills are required')
+            .matches(
+                /^[A-Za-z\s,]+$/,
+                'Skills should only contain alphabetic characters, spaces, and commas'
+            ),
     });
 
     const formik = useFormik({
@@ -33,9 +61,7 @@ function ModalCareer() {
             email: '',
             phone: '',
             candType: '',
-            expYear: '',
-            expMonth: '',
-            resume: '',
+            resume: null, // Initialize with null for file upload
             skills: '',
         },
         validationSchema,
