@@ -44,7 +44,7 @@
     font-size: 14px;
 }
 
-.icon-text a {
+/* .icon-text a {
     color: #fff;
     background: linear-gradient(to right, #ff5917, #ff9317);
     font-size: 12px;
@@ -56,8 +56,8 @@
     text-decoration: none;
     transition: 0.5s;
     margin-right: 300px;
-    /* margin-bottom: 10px; */
-}
+    
+} */
 
 .icon-text a:hover {
     background: linear-gradient(to right, #ff9317, #ff5917)
