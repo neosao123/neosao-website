@@ -1,0 +1,15 @@
+.imported-btn {
+    color: #fff;
+    background: linear-gradient(to right, #ff5917, #ff9317);
+    font-size: 12px;
+    padding: 7px 28px;
+    display: inline-block;
+    border-radius: 30px;
+    letter-spacing: 0.5px;
+    margin: 10px 0 0px;
+    text-decoration: none;
+    transition: 0.5s;
+    margin-right: 300px;
+    margin-bottom: 2px;
+    /* margin-bottom: 10px; */
+}
