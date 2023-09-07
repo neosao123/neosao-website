@@ -13,7 +13,7 @@ import targate from '../assets/images/targate.gif'
 import innerTop from '../assets/images/inner-top-img.png'
 import approch from '../assets/images/approch.gif'
 import blood from '../assets/images/blood.gif'
-import { FaWpforms,FaUsers,FaUserPlus,FaTint } from "react-icons/fa";
+import { FaWpforms, FaUsers, FaUserPlus, FaTint } from "react-icons/fa";
 import InnerHeader from '../components/InnerHeader'
 
 
@@ -21,43 +21,43 @@ const About = () => {
 
     const [a, setA] = useState(0);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const oTop = document.getElementById('counter').getBoundingClientRect().top - window.innerHeight;
+    useEffect(() => {
+        const handleScroll = () => {
+            const oTop = document.getElementById('counter').getBoundingClientRect().top - window.innerHeight;
 
-      if (a === 0 && window.scrollY > oTop) {
-        const counterValues = document.querySelectorAll('.counter-value');
+            if (a === 0 && window.scrollY > oTop) {
+                const counterValues = document.querySelectorAll('.counter-value');
 
-        counterValues.forEach((counter) => {
-          const countTo = parseInt(counter.getAttribute('data-count'));
-          let countNum = parseInt(counter.textContent);
+                counterValues.forEach((counter) => {
+                    const countTo = parseInt(counter.getAttribute('data-count'));
+                    let countNum = parseInt(counter.textContent);
 
-          const animation = setInterval(() => {
-            countNum += Math.ceil(countTo / 70); // Adjust the division value for smoother animation
+                    const animation = setInterval(() => {
+                        countNum += Math.ceil(countTo / 70); // Adjust the division value for smoother animation
 
-            if (countNum >= countTo) {
-              counter.textContent = countTo;
-              clearInterval(animation);
-            } else {
-              counter.textContent = countNum;
+                        if (countNum >= countTo) {
+                            counter.textContent = countTo;
+                            clearInterval(animation);
+                        } else {
+                            counter.textContent = countNum;
+                        }
+                    }, 100); // Adjust the interval as needed
+                });
+
+                setA(1);
             }
-          }, 100); // Adjust the interval as needed
-        });
+        };
 
-        setA(1);
-      }
-    };
+        window.addEventListener('scroll', handleScroll);
 
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, [a]);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, [a]);
 
     return (
         <>
-        <InnerHeader />
+            <InnerHeader />
             <div className="inner-header">
                 <div className="container">
                     <div className="row">
@@ -201,15 +201,15 @@ const About = () => {
             <div className="quick-counter animatedParent">
                 <div className="container">
                     <div className="row" id="counter">
-                        <div className="col-md-3 col-sm-6 col-xs-12 counter-Txt"> <FaWpforms/> <h4>Invoices </h4><span className="counter-value" data-count="100">0</span> +</div>
-                        <div className="col-md-3 col-sm-6 col-xs-12 counter-Txt"> <FaUsers/><h4>Clients </h4><span className="counter-value" data-count="50">0</span> +</div>
-                        <div className="col-md-3 col-sm-6 col-xs-12 counter-Txt"> <FaUserPlus /> <h4>Team </h4><span className="counter-value" data-count="10">0 </span> +</div>
-                        <div className="col-md-3 col-sm-6 col-xs-12 counter-Txt"> <FaTint /><h4> Donated Bags </h4><span className="counter-value" data-count="5">0 </span>+</div>
+                        <div className="col-md-3 col-sm-6 col-xs-12 counter-Txt"> <span className='fa' ><FaWpforms /></span>  <h4>Invoices </h4><span className="counter-value" data-count="100">0</span> +</div>
+                        <div className="col-md-3 col-sm-6 col-xs-12 counter-Txt"> <span className='fa' ><FaUsers /></span><h4>Clients </h4><span className="counter-value" data-count="50">0</span> +</div>
+                        <div className="col-md-3 col-sm-6 col-xs-12 counter-Txt"> <span className='fa' ><FaUserPlus /></span>  <h4>Team </h4><span className="counter-value" data-count="10">0 </span> +</div>
+                        <div className="col-md-3 col-sm-6 col-xs-12 counter-Txt"> <span className='fa' ><FaTint /></span><h4> Donated Bags </h4><span className="counter-value" data-count="5">0 </span>+</div>
                     </div>
                 </div>
             </div>
 
-            
+
 
         </>
 
