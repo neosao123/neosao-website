@@ -77,9 +77,9 @@ function ModalCareer() {
             <>
                 <button className='imported-btn' onClick={handleShow}>Apply Now</button>
 
-                <Modal show={show} onHide={handleClose} centered>
-                    <Modal.Header closeButton>
-                        <Modal.Title>Fill Information</Modal.Title>
+                <Modal className='full-form' show={show} onHide={handleClose} centered>
+                    <Modal.Header className='header' closeButton>
+                        <Modal.Title className='title' >Fill Information</Modal.Title>
                     </Modal.Header>
 
                     <Modal.Body>
@@ -87,7 +87,7 @@ function ModalCareer() {
                             <div className="form-group">
                                 <input
                                     type="text"
-                                    className="form-control"
+                                    className="form-control custom-input"
                                     id="name"
                                     name="name"
                                     placeholder="Name"
@@ -103,7 +103,7 @@ function ModalCareer() {
                             <div className="form-group">
                                 <input
                                     type="email"
-                                    className="form-control"
+                                    className="form-control custom-input"
                                     id="email"
                                     name="email"
                                     placeholder="Email"
@@ -119,7 +119,7 @@ function ModalCareer() {
                             <div className="form-group">
                                 <input
                                     type="tel"
-                                    className="form-control"
+                                    className="form-control custom-input"
                                     id="phone"
                                     name="phone"
                                     placeholder="Phone"
@@ -155,7 +155,7 @@ function ModalCareer() {
                                     <div className="form-group">
                                         <input
                                             type="number"
-                                            className="form-control"
+                                            className="form-control custom-input"
                                             id="expYear"
                                             name="expYear"
                                             placeholder="Years"
@@ -173,7 +173,7 @@ function ModalCareer() {
                                     <div className="form-group">
                                         <input
                                             type="number"
-                                            className="form-control"
+                                            className="form-control custom-input"
                                             id="expMonth"
                                             name="expMonth"
                                             placeholder="Months"
@@ -191,7 +191,7 @@ function ModalCareer() {
                             <div className="form-group">
                                 <input
                                     type="file"
-                                    className="form-control"
+                                    className="form-control custom-input"
                                     id="resume"
                                     name="resume"
                                     onChange={(event) =>
@@ -208,7 +208,7 @@ function ModalCareer() {
                                 <textarea
                                     id="skills"
                                     name="skills"
-                                    className="form-control"
+                                    className="form-control custom-input"
                                     rows="3"
                                     placeholder="Skills"
                                     onChange={formik.handleChange}
@@ -227,7 +227,7 @@ function ModalCareer() {
                         <Button variant="secondary" onClick={handleClose}>
                             Cancel
                         </Button>
-                        <Button variant="primary" onClick={formik.handleSubmit}>
+                        <Button className='submit-btn' variant="primary" onClick={formik.handleSubmit}>
                             Submit
                         </Button>
                     </Modal.Footer>
