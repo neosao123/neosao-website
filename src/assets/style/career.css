@@ -1,0 +1,29 @@
+/*career*/
+.career {
+    background: #10429a;
+    position: relative;
+    overflow: hidden;
+}
+
+.career-img img {
+    width: 100%;
+    animation: animationFramesOne 15s infinite linear;
+}
+
+.career-text {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.career-text h5 {
+    font-size: 60px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.career-text span {
+    font-size: 31px;
+    color: #ffde3f;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}

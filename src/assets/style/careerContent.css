@@ -1,0 +1,144 @@
+/*inner-career*/
+/* .inner-career {
+    background: url(../images/.png) no-repeat bottom left;
+} */
+
+.inner-career-text {
+    box-shadow: 0px 1px 21px 0px rgb(233 233 233 / 75%);
+    border-radius: 4px;
+    padding: 5px;
+    display: flex;
+    transition: 0.5s;
+    margin: 0 0 30px;
+    z-index: -1;
+}
+
+.career-icon {
+    float: left;
+    font-size: 50px;
+    background: #f1f1f1;
+    width: 80px;
+    text-align: center;
+    color: #10429a;
+    border-radius: 5px;
+    margin: 0 10px 0px 0;
+    padding: 5px;
+    height: fit-content;
+}
+
+.icon-text {
+    width: 100%;
+}
+
+.icon-text h4 {
+    color: #31343a;
+    font-size: 18px;
+}
+
+.icon-text span.fa {
+    color: #10429a;
+}
+
+.icon-text p {
+    color: #504444;
+    font-size: 14px;
+}
+
+.icon-text a {
+    color: #fff;
+    background: linear-gradient(to right, #ff5917, #ff9317);
+    font-size: 12px;
+    padding: 7px 28px;
+    display: inline-block;
+    border-radius: 30px;
+    letter-spacing: 0.5px;
+    margin: 10px 0 0px;
+    text-decoration: none;
+    transition: 0.5s;
+    margin-right: 300px;
+    /* margin-bottom: 10px; */
+}
+
+.icon-text a:hover {
+    background: linear-gradient(to right, #ff9317, #ff5917)
+}
+
+.inner-career-text:hover {
+    background: #10429a;
+}
+
+.inner-career-text:hover h4 {
+    color: #fff;
+}
+
+.inner-career-text:hover p {
+    color: #fff;
+}
+
+.inner-career-text:hover .icon-text .fa {
+    color: #fff;
+}
+
+.custom-modal .modal-content select {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 0.34rem;
+    width: 100%;
+}
+
+
+.custom-modal .modal-title {
+    margin: 0 auto;
+}
+
+.custom-modal .modal-header {
+    background: #10429a;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+
+.custom-modal .modal-header .close {
+    padding: 0;
+    margin: 0;
+}
+
+.custom-modal .btn-primary {
+    background: linear-gradient(to right, #ff5917, #ff9317);
+    border: 0;
+    padding: 8px 20px;
+    font-size: 14px;
+}
+
+.custom-modal .form-control {
+    font-size: 14px;
+}
+
+.inner-career .big-heading h5 {
+    text-align: center;
+    margin: 0 0 40px;
+}
+
+.inner-career .text-center {
+    margin: 0 0 30px;
+}
+
+.inner-career .text-center span {
+    font-size: 20px;
+}
+
+.inner-career .small-heading {
+    text-align: center;
+    display: inline-block;
+    padding: 0 50px 0px 50px;
+    color: #fff;
+}
+
+.inner-career .small-heading:after {
+    position: absolute;
+    width: 37px;
+    height: 3px;
+    background: #ff4a17;
+    top: 10px;
+    right: 0;
+    content: '';
+}

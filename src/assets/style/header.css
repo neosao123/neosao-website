@@ -1,0 +1,369 @@
+* {
+  /* border: 1px solid grey !important;
+  color: #ff0000 !important;
+  background: #000000 !important; */
+}
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.portfolio-item {
+  color: black;
+}
+
+/* Add this CSS code to your stylesheet or in a style tag within your HTML file */
+.navbar-nav li {
+  list-style: none;
+  margin-right: 20px;
+  /* Adjust the margin as needed */
+}
+
+.navbar-nav li a {
+  text-decoration: none;
+  color: white;
+  /* Set your default text color here */
+  transition: color 0.3s, cursor 0.3s;
+  cursor: pointer;
+}
+
+.navbar-nav li a:hover,
+.navbar-nav li a:focus {
+  color: #fff !important;
+  /* Set the text color to white on hover or focus using !important */
+  cursor: pointer;
+}
+
+/*  */
+p {
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  text-align: justify;
+  color: #312e2e;
+  font-weight: 400;
+  line-height: 25px;
+  padding: 0;
+  margin: 0;
+}
+
+.pnm {
+  padding: 0;
+  margin: 0;
+}
+
+.tnb {
+  padding: 100px 0;
+}
+
+.tnb5 {
+  padding: 50px 0;
+  position: relative;
+}
+
+.tnb7 {
+  padding: 70px 0;
+}
+
+.navbar-nav .active {
+  color: #ffc800 !important;
+}
+
+.contact_btn {
+  background: linear-gradient(to right, #ff5917, #ff9317);
+  padding: 15px 30px;
+  border-radius: 5px;
+  border: 0;
+  color: #fff;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  font-size: 18px;
+  margin: 30px 0 0;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  display: inline-block;
+  text-decoration: none;
+  animation-delay: 2.5s;
+}
+
+.contact_btn:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact_btn:before {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  bottom: 4px;
+  background-color: #10429a;
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  content: "";
+  z-index: -1;
+  width: 70px;
+  border-radius: 30px;
+}
+
+.contact_btn:hover:before {
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 0;
+}
+
+.slider-text .contact_btn {
+  background: linear-gradient(to right, #ff5917, #ff9317);
+  padding: 15px 30px;
+  border-radius: 5px;
+  border: 0;
+  color: #fff;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  font-size: 18px;
+  margin: 30px 0 0;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  display: inline-block;
+  text-decoration: none;
+  animation-delay: 2.5s;
+}
+
+.slider-text .contact_btn:before {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  bottom: 4px;
+  background-color: #10429a;
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  content: "";
+  z-index: -1;
+  width: 70px;
+  border-radius: 30px;
+}
+
+.slider-text .contact_btn:hover:before {
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 0;
+}
+
+/*small-heading*/
+.small-heading {
+  position: relative;
+  padding: 0 0px 0px 50px;
+  margin: 0 0 25px;
+}
+
+.small-heading h4 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  color: #ff4a17;
+}
+
+.small-heading:before {
+  position: absolute;
+  width: 37px;
+  height: 3px;
+  background: #ff4a17;
+  top: 10px;
+  left: 0;
+  content: "";
+}
+
+/*small-heading*/
+.big-heading h5 {
+  font-size: 40px;
+  color: #14212b;
+  font-weight: 700;
+  margin: 0 0 30px;
+}
+
+/*nav*/
+.main-nav {
+  z-index: 2;
+  background: #1d407f;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.new-nav {
+  padding: 0;
+  margin: 0;
+}
+
+.new-nav a {
+  text-decoration: none;
+  padding: 5px 0;
+  z-index: 2;
+}
+
+.logo h2 {
+  margin: 0;
+}
+
+.logo h2 span {
+  font-size: 31px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.new-nav ul li .custom-link {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0px;
+  letter-spacing: 0.5px;
+  position: relative;
+  line-height: 70px;
+  padding: 2px 20px;
+  transition: 0.5s;
+  text-transform: uppercase;
+}
+
+.new-nav ul li .custom-link :hover {
+  text-decoration: none;
+  color: #ffc800;
+  border-radius: 10px;
+}
+
+.new-nav .contact_btn {
+  background: linear-gradient(to right, #ff5917, #ff9317);
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 0;
+  color: #fff;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  font-size: 14px;
+  margin: 0 0 0 15px;
+  position: relative;
+  z-index: 5;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+
+.new-nav .contact_btn:before {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  bottom: 4px;
+  background-color: #10429a;
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  content: "";
+  z-index: -1;
+  width: 50px;
+  border-radius: 30px;
+}
+
+.new-nav .contact_btn:hover:before {
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 0;
+}
+
+.logo img {
+  width: 100%;
+  max-width: 45px;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+  margin: 0 10px 0 0;
+  box-shadow: inset 0 0px 0 15px #fff;
+  border-radius: 8px;
+  padding: 2px;
+}
+
+/*main-slider*/
+.main-slider {
+  position: relative;
+  margin-top: 0;
+  overflow: hidden;
+  background-image: linear-gradient(to top, #d9d9dc33, #ffed6c00);
+}
+
+.slider-img img {
+  width: 100%;
+  max-width: 700px;
+  float: right;
+  /*-webkit-user-select: none;*/
+  /*  -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-animation: zoomin 10s ease-in infinite;
+    animation: zoomin 10s ease-in infinite;
+    transition: all .5s ease-in-out;*/
+}
+
+.slider-img {
+  position: relative;
+  overflow: hidden;
+}
+
+/*.slider-img:before{position: absolute; top: 0; left: 0; background-image: linear-gradient(to bottom, #1d6eadbd , #0b2d6db3); width: 100%; height: 16%; content: ''; z-index: 1;}*/
+.slider-text {
+  position: absolute;
+  top: 130px;
+  left: 54px;
+  right: 0;
+  text-align: left;
+  z-index: 1;
+}
+
+.slider-text h2 {
+  color: #1d407f;
+  font-size: 50px;
+  font-weight: 700;
+  margin: 0 0 20px;
+  line-height: 70px;
+  animation-delay: 1s;
+}
+
+.slider-text p {
+  animation-delay: 2s;
+  font-size: 18px;
+  color: #464545;
+}
+
+.slider-text .more {
+  animation-delay: 3s;
+  color: #fff;
+  background: linear-gradient(to right, #ff5917, #ff9317);
+  text-decoration: none;
+  padding: 15px 25px;
+  border-radius: 4px;
+  display: inline-flex;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 30px 0 0;
+  transition: 0.5s;
+}
+
+.slider-text .more:hover {
+  background: linear-gradient(to right, #ff9317, #ff5917);
+}
+
+.slider-text .more .fa {
+  margin: 0;
+  padding: 3px 0 0 10px;
+}

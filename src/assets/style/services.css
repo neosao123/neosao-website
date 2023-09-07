@@ -1,0 +1,148 @@
+.services {
+    text-align: center;
+    position: relative;
+    background: url(../images/footer-bg.png) no-repeat top center;
+    background-size: auto;
+    z-index: 1;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.services:before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #ffffffeb;
+    content: '';
+    z-index: -1;
+}
+
+.services .col-md-4:nth-child(4) .services-text {
+    margin: 0;
+}
+
+.services .col-md-4:nth-child(5) .services-text {
+    margin: 0;
+}
+
+.services .col-md-4:nth-child(6) .services-text {
+    margin: 0;
+}
+
+.services .small-heading {
+    text-align: center;
+    display: inline-block;
+    padding: 0 50px 0px 50px;
+    color: #fff;
+}
+
+.services .small-heading:after {
+    position: absolute;
+    width: 37px;
+    height: 3px;
+    background: #ff4a17;
+    top: 10px;
+    right: 0;
+    content: '';
+}
+
+.services .small-heading h4 {
+    color: #ff4a17;
+}
+
+.services .big-heading h5 {
+    color: #14212b;
+}
+
+.services-text {
+    text-align: left;
+    -webkit-box-shadow: 0px 0px 10px 0px rgb(33 30 30 / 15%);
+    box-shadow: 0px 0px 10px 0px rgb(33 30 30 / 15%);
+    border-radius: 6px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.services-text img {
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+}
+
+.services-text h6 {
+    color: #39465f;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 20px;
+}
+
+.services-text .item-contant {
+    padding: 20px;
+    position: relative;
+    border-radius: 0 0 5px 5px;
+}
+
+.services-text .item-contant:before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    height: 7px;
+    width: 100%;
+    left: 0;
+    background: #10429a;
+    transition: all 0.3s ease-in-out;
+    z-index: -1;
+}
+
+.services-text .item-contant .fa {
+    margin: 0 7px;
+    font-size: 16px;
+}
+
+.services-text:hover .item-contant:before {
+    height: 100%;
+}
+
+.services-text:hover .item-contant h6 {
+    color: #fff;
+}
+
+.services-text:hover .item-contant p {
+    color: #fff;
+}
+
+.services-text:hover .item-contant a {
+    color: #fff;
+}
+
+.services-text:hover .item-contant .fa {
+    color: #fd6a01;
+}
+
+.services-text:hover img {
+    transform: scale(1.05) rotate(-2deg);
+}
+
+.services-text a {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 15px;
+    color: #07249e;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    text-decoration: none;
+}
+
+.item-contant a:hover {
+    color: #ff5f17;
+}
+
+.services-text p {
+    margin: 0 0 20px;
+}

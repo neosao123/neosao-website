@@ -1,0 +1,141 @@
+/*services*/
+.main-inner-services {
+    overflow: hidden;
+}
+
+.main-inner-services .small-heading {
+    display: inline-block;
+    padding: 0 50px 0px 50px;
+    text-align: center;
+}
+
+.main-inner-services .small-heading:after {
+    position: absolute;
+    width: 37px;
+    height: 3px;
+    background: #ff4a17;
+    top: 10px;
+    right: 0;
+    content: '';
+}
+
+.inner-sr-text img {
+    margin: 0 20px 20px 0;
+    width: 50%;
+    float: left;
+}
+
+.inner-sr-text-img {
+    position: relative;
+}
+
+.number4 {
+    color: #dce3ff;
+    font-size: 60px;
+    position: absolute;
+    left: 0;
+    top: -23px;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.heading-top-innner {
+    text-align: center;
+}
+
+.main-inner-services-titiel {
+    font-size: 22px;
+    color: #14212b;
+    margin: 0 0 30px 30px;
+    font-weight: 700;
+    position: relative;
+    transition: 0.5s;
+}
+
+.main-inner-services-titiel:before {
+    position: absolute;
+    bottom: -10px;
+    width: 37px;
+    height: 3px;
+    background: #ff4a17;
+    left: 0;
+    content: '';
+}
+
+.inner-sr-text-img img {
+    width: 100%;
+}
+
+.inner-sr-text-img .keyfeature {
+    max-width: 319px;
+    margin: 0 auto;
+    display: block;
+}
+
+.inner-sr-text-img:hover .number4 {
+    color: #10429a;
+}
+
+.inner-sr-text-img:hover .main-inner-services-titiel {
+    margin: 0 0 30px 43px;
+}
+
+.main-inner-services .col-md-6:nth-child(4) .inner-sr-text-img {
+    margin: 30px 0 0;
+}
+
+.main-inner-services .col-md-6:nth-child(5) .inner-sr-text-img {
+    margin: 30px 0 0;
+}
+
+.main-inner-services .col-md-6:nth-child(6) .inner-sr-text-img {
+    margin: 30px 0 0;
+}
+
+.highlights:hover li:before {
+    color: #10429a;
+    transform: scale(1.1);
+}
+
+.highlights ul {
+    padding: 0;
+    margin: 0;
+}
+
+.highlights li {
+    padding: 5px 31px 0;
+    margin: 0;
+    list-style-type: none;
+    font-size: 14px;
+    color: #4f4f4f;
+    line-height: 30px;
+    letter-spacing: 0.5px;
+    position: relative;
+}
+
+.highlights li:before {
+    position: absolute;
+    left: 0;
+    font-size: 12px;
+    content: '\f111';
+    font-family: FontAwesome;
+    color: #fd6a01;
+    transition: 0.5s;
+}
+
+.ser-bg {
+    background: url(../images/bg-dotted.png) repeat;
+}
+
+.ser-imgset-right img {
+    float: right;
+    margin: 0 0px 20px 20px;
+}
+
+.highlights p {
+    text-align: initial;
+}
+
+.mt3 {
+    margin: 30px 0 0;
+}
