@@ -11,6 +11,7 @@ import InnerHeader from '../components/InnerHeader'
 import WhyUs from '../components/WhyUs'
 import About from '../components/About'
 import ServicesContent from '../components/ServicesContent'
+import Header2 from '../components/Header2'
 
 // Unwanted but if future need refer here
 // import Home from '../components/Home'
@@ -57,6 +58,7 @@ const Allroutes = () => {
                 <Route path='/refund' element={<Refund />} />
                 <Route path='*' element={<Error />} />
                 <Route path='inner-header' element={<InnerHeader />} />
+                <Route path='navbar-testing' element={<Header2 />} />
             </Routes>
             <Footer />
         </Suspense>
