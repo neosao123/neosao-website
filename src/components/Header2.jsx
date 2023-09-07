@@ -11,7 +11,7 @@ function Header2() {
     return (
         <>
             {['md'].map((expand) => (
-                <Navbar key={expand} expand={expand} className="bg-body-tertiary mb-3 header2-main-nav">
+                <Navbar key={expand} expand={expand} className="main-nav">
                     <Container fluid>
                         <Navbar.Brand href="#">
                             <a className="logo" href="/neosaoweb">
@@ -30,7 +30,7 @@ function Header2() {
                                 </Offcanvas.Title>
                             </Offcanvas.Header>
                             <Offcanvas.Body>
-                                <Nav className="justify-content-end flex-grow-1 pe-3 header2-new-nav">
+                                <Nav className="justify-content-end flex-grow-1 pe-3">
 
                                     <ul className="navbar-nav ml-auto">
                                         <li>
