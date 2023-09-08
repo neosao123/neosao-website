@@ -1,0 +1,55 @@
+.imported-btn {
+    color: #fff;
+    background: linear-gradient(to right, #ff5917, #ff9317);
+    font-size: 12px;
+    padding: 7px 28px;
+    display: inline-block;
+    border-radius: 30px;
+    letter-spacing: 0.5px;
+    margin: 10px 0 0px;
+    text-decoration: none;
+    transition: 0.5s;
+    margin-right: 300px;
+    margin-bottom: 2px;
+    /* margin-bottom: 10px; */
+
+    /* Remove border line */
+    border: none !important;
+}
+
+
+.full-form {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 0.34rem;
+    width: 100%;
+}
+
+.title {
+    margin: 0 auto;
+    padding-left: 50px;
+}
+
+.header {
+    background: #10429a;
+    color: #fff;
+    letter-spacing: 0.5px;
+    padding: 0;
+    margin: 0;
+}
+
+.submit-btn {
+    background: linear-gradient(to right, #ff5917, #ff9317);
+    border: 0;
+    padding: 8px 20px;
+    font-size: 14px;
+}
+
+.custom-input {
+    font-size: 14px;
+}
+
+/* Style for error messages */
+.error {
+    color: red;
+}
