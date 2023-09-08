@@ -10,6 +10,7 @@ import { FaLongArrowAltRight, FaPenAlt } from "react-icons/fa";
 import { BsAndroid2 } from "react-icons/bs";
 import { MdDeveloperMode } from "react-icons/md";
 import InnerHeader from '../components/InnerHeader'
+import ModalCareer from './ModalCareer'
 
 const careerContent = () => {
   return (
@@ -73,9 +74,10 @@ const careerContent = () => {
                     <span className='fa' > <FaLongArrowAltRight /> </span>  Skill Required :{' '}
                     <span>Codeigniter/Laravel</span>
                   </p>
-                  <a href="#" data-toggle="modal" data-target="#exampleModalCenter" className='mb-2'>
+                  {/* <a href="#" data-toggle="modal" data-target="#exampleModalCenter" className='mb-2'>
                     Apply Now
-                  </a>
+                  </a> */}
+                  <ModalCareer />
                 </div>
               </div>
             </div>
@@ -95,9 +97,10 @@ const careerContent = () => {
                     <span className='fa'><FaLongArrowAltRight /></span> Skill Required :{' '}
                     <span>In-depth knowledge of Angular</span>
                   </p>
-                  <a href="#" data-toggle="modal" data-target="#exampleModalCenter" className='mb-2'>
+                  {/* <a href="#" data-toggle="modal" data-target="#exampleModalCenter" className='mb-2'>
                     Apply Now
-                  </a>
+                  </a> */}
+                  <ModalCareer />
                 </div>
               </div>
             </div>
@@ -117,9 +120,10 @@ const careerContent = () => {
                     <sapn className='fa' > <FaLongArrowAltRight /> </sapn>Skill Required :{' '}
                     <span>In-depth knowledge of Flutter</span>
                   </p>
-                  <a href="#" data-toggle="modal" data-target="#exampleModalCenter" className='mb-2'>
+                  {/* <a href="#" data-toggle="modal" data-target="#exampleModalCenter" className='mb-2'>
                     Apply Now
-                  </a>
+                  </a> */}
+                  <ModalCareer />
                 </div>
               </div>
             </div>
@@ -139,9 +143,10 @@ const careerContent = () => {
                     <sapn className='fa' > <FaLongArrowAltRight /> </sapn> Skill Required :{' '}
                     <span>In-depth knowledge of Android</span>
                   </p>
-                  <a href="#" data-toggle="modal" data-target="#exampleModalCenter" className='mb-2'>
+                  {/* <a href="#" data-toggle="modal" data-target="#exampleModalCenter" className='mb-2'>
                     Apply Now
-                  </a>
+                  </a> */}
+                  <ModalCareer />
                 </div>
               </div>
             </div>

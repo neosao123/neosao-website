@@ -1,45 +1,29 @@
-import React, { useState } from 'react'
+import React from 'react'
 import '../assets/style/header.css'
 import '../assets/style/Responsiveness.css'
 import logo from '../assets/images/logo-icon.png'
 // import { NavLink } from 'react-router-dom'
 import { Link } from 'react-scroll'
 import { NavLink } from 'react-router-dom'
+import Offcanvas from './Offcanvas'
 
 const Header = () => {
-    const [isSidepanelOpen, setIsSidepanelOpen] = useState(false);
-    const curPageName = "/"; // Replace this with the actual current page name
-
-    const openNav = () => {
-        setIsSidepanelOpen(true);
-    };
-
-    const closeNav = () => {
-        setIsSidepanelOpen(false);
-    };
-
-
-    return (
+return (
         <div className="main-nav">
             <div className="container">
                 <nav className="navbar navbar-expand-md navbar-dark new-nav">
                     <a className="logo" href="/neosaoweb">
                         <h2><img src={logo} alt="Logo" /> <span>Neosao</span></h2>
                     </a>
-                    <button className="navbar-toggler collapsed" onClick={openNav}>
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    {isSidepanelOpen && (
-                        <div id="mySidepanel" className="sidepanel">
-                            <a href="/" className="closebtn" onClick={closeNav}>×</a>
-                            <Link to='/' >Home</Link>
-                            <Link to='/about' onClick={closeNav}>About Us</Link>
-                            <Link to='/services' onClick={closeNav}>Services</Link>
-                            <Link to='/portfolio'>Portfolio</Link>
-                            <Link to='/career'>Career</Link>
-                            <Link to='/reach-us-contact'>Reach us</Link>
-                        </div>
-                    )}
+
+                    <Offcanvas />
+                   
+
+                    {/* OFFCANVAS BOOTSTRAP */}
+                    
+
+                    {/* OFFCANVAS END */}
+
                     <div className="navbar-collapse collapse" id="navbarCollapse">
                         <ul className="navbar-nav ml-auto">
                             <li>
