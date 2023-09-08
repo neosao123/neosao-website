@@ -1,4 +1,10 @@
-.main {
+
+.container{
+    margin: auto 15px auto 15px;
+}
+
+
+.main-nav {
     z-index: 2;
     background: #1d407f;
     position: fixed;
@@ -31,27 +37,6 @@
     text-transform: uppercase;
 }
 
-li {
-    list-style: none;
-    margin-right: 20px;
-    /* Adjust the margin as needed */
-}
-
-li {
-    text-decoration: none;
-    color: white;
-    /* Set your default text color here */
-    transition: color 0.3s, cursor 0.3s;
-    cursor: pointer;
-}
-
-.navbar-nav li :hover,
-.navbar-nav li :focus {
-    color: #fff !important;
-    /* Set the text color to white on hover or focus using !important */
-    cursor: pointer;
-}
-
 .custom-link {
     color: #fff;
     font-size: 14px;
@@ -65,27 +50,41 @@ li {
     text-transform: uppercase;
 }
 
+.custom-link :hover {
+    text-decoration: none;
+    color: #ffc800;
+    border-radius: 10px;
+}
+
+.new-nav ul li .custom-link {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0px;
+    letter-spacing: 0.5px;
+    position: relative;
+    line-height: 70px;
+    padding: 2px 20px;
+    transition: 0.5s;
+    text-transform: uppercase;
+  }
+
 .contact_btn {
     background: linear-gradient(to right, #ff5917, #ff9317);
-    padding: 15px 30px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     border-radius: 5px;
     border: 0;
     color: #fff;
     letter-spacing: 0.5px;
     font-weight: 500;
-    font-size: 18px;
-    margin: 30px 0 0;
+    font-size: 14px;
+    margin: 0 0 0 15px;
     position: relative;
+    z-index: 5;
     overflow: hidden;
-    z-index: 1;
-    display: inline-block;
-    text-decoration: none;
-    animation-delay: 2.5s;
-}
-
-.contact_btn:hover {
-    color: #fff;
-    text-decoration: none;
+    text-transform: uppercase;
 }
 
 .contact_btn:before {
@@ -98,7 +97,7 @@ li {
     transition: all 0.3s ease-out 0s;
     content: "";
     z-index: -1;
-    width: 70px;
+    width: 50px;
     border-radius: 30px;
 }
 
@@ -110,10 +109,8 @@ li {
     border-radius: 0;
 }
 
-.navbar-options{
-    display: flex;
-}
-
-.navbar-options .active {
-    color: #ffc800 !important;
+/* COLLAPSE */
+.collapsed-nav {
+    background-color: #1d407f; /* Change this to your desired color */
+    /* Add other styling properties as needed */
   }
