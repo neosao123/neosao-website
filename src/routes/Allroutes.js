@@ -1,30 +1,30 @@
 import React, { lazy, Suspense } from 'react'
 import { Route, Routes } from 'react-router-dom'
-// import Home from '../components/Home'
-// import Career from '../components/Career'
-// import Services from '../components/Services'
-
-
-// import Header from '../components/Header'
-// import Footer from '../components/Footer'
 import WhyUs from '../components/WhyUs'
-// import AboutUs from '../components/AboutUs'
 import About from '../components/About'
-// import ReachUsContent from '../components/ReachUsContent'
 import ServicesContent from '../components/ServicesContent'
-// import Portfolio from '../components/Portfolio'
 import CareerContent from '../components/careerContent'
 import Privacy from '../components/Privacy'
 import Terms from '../components/Terms'
 import Refund from '../components/Refund'
 import Error from '../components/Error'
 import { Loader } from '../components/Loader'
-// import Header from '../components/Header'
 import Footer from '../components/Footer'
 import InnerHeader from '../components/InnerHeader'
 import Navbar2 from '../components/Navbar2'
+
+
+// import Home from '../components/Home'
+// import Career from '../components/Career'
+// import Services from '../components/Services'
 // import Header from '../components/Header'
 // import Footer from '../components/Footer'
+// import Header from '../components/Header'
+// import Footer from '../components/Footer'
+// import AboutUs from '../components/AboutUs'
+// import ReachUsContent from '../components/ReachUsContent'
+// import Header from '../components/Header'
+// import Portfolio from '../components/Portfolio'
 
 
 const Home = lazy(() => import("../pages/Home"))
@@ -33,6 +33,10 @@ const Services = lazy(() => import('../components/Services'))
 const Portfolio = lazy(() => import('../components/Portfolio'))
 const Career = lazy(() => import('../components/Career'))
 const ReachUsContent = lazy(() => import('../components/ReachUsContent'));
+
+
+
+
 
 const Allroutes = () => {
     return (
