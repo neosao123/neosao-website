@@ -22,6 +22,7 @@ import { Loader } from '../components/Loader'
 // import Header from '../components/Header'
 import Footer from '../components/Footer'
 import InnerHeader from '../components/InnerHeader'
+import Navbar2 from '../components/Navbar2'
 // import Header from '../components/Header'
 // import Footer from '../components/Footer'
 
@@ -54,6 +55,7 @@ const Allroutes = () => {
                 <Route path='/refund' element={<Refund />} />
                 <Route path='*' element={<Error />} />
                 <Route path='inner-header' element={<InnerHeader />} />
+                <Route path='navbar2' element={<Navbar2 />} />
             </Routes>
             <Footer />
         </Suspense>
