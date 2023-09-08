@@ -1,8 +1,4 @@
-* {
-  /* border: 1px solid grey !important;
-  color: #ff0000 !important;
-  background: #000000 !important; */
-}
+
 
 html {
   scroll-behavior: smooth;
@@ -42,34 +38,9 @@ body {
 }
 
 /*  */
-p {
-  font-size: 15px;
-  letter-spacing: 0.5px;
-  text-align: justify;
-  color: #312e2e;
-  font-weight: 400;
-  line-height: 25px;
-  padding: 0;
-  margin: 0;
-}
 
-.pnm {
-  padding: 0;
-  margin: 0;
-}
 
-.tnb {
-  padding: 100px 0;
-}
 
-.tnb5 {
-  padding: 50px 0;
-  position: relative;
-}
-
-.tnb7 {
-  padding: 70px 0;
-}
 
 .navbar-nav .active {
   color: #ffc800 !important;
@@ -120,7 +91,7 @@ p {
   border-radius: 0;
 }
 
-.slider-text .contact_btn {
+/* .slider-text .contact_btn {
   background: linear-gradient(to right, #ff5917, #ff9317);
   padding: 15px 30px;
   border-radius: 5px;
@@ -158,7 +129,7 @@ p {
   bottom: 0;
   right: 0;
   border-radius: 0;
-}
+} */
 
 /*small-heading*/
 .small-heading {

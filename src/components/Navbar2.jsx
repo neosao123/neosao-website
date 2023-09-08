@@ -7,6 +7,8 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import '../assets/style/navbar2.css'
 import logo from '../assets/images/logo-icon.png'
+import { Link } from 'react-scroll'
+import { NavLink } from 'react-router-dom'
 
 function Navbar2() {
     return (
@@ -26,18 +28,47 @@ function Navbar2() {
                             placement="end"
                         >
                             <Offcanvas.Header closeButton>
+                                {/* COLLAPSE TITLE */}
                                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                                    Offcanvas
+                                    <h2><img src={logo} alt="Logo" /> <span>Neosao</span></h2>
                                 </Offcanvas.Title>
+
                             </Offcanvas.Header>
 
                             <Offcanvas.Body>
 
                                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                                    <Nav.Link href="#action1">Home</Nav.Link>
-                                    <Nav.Link href="#action2">Link</Nav.Link>
 
-                                    <NavDropdown
+                                    <ul className='navbar-options' >
+
+                                        <li>
+                                            <Link to='home-main' className='custom-link' spy={true} smooth={true} offset={-100} duration={500}>Home</Link>
+                                        </li>
+
+                                        <li>
+                                            <Link to='about' className='custom-link' spy={true} smooth={true} offset={50} duration={500}>About </Link>
+                                        </li>
+
+                                        <li>
+                                            <Link to='services' className='custom-link' spy={true} smooth={true} offset={50} duration={500}>Services</Link>
+                                        </li>
+
+                                        <li>
+                                            <NavLink to='portfolio' className='custom-link'>Portfolio</NavLink>
+                                        </li>
+
+                                        <li>
+                                            <Link to='career' className='custom-link' spy={true} smooth={true} offset={2} duration={500}>Career</Link>
+                                        </li>
+
+                                    </ul>
+
+
+                                    <NavLink to='/reach-us-contact' className="contact_btn">Reach us</NavLink>
+
+
+                                    {/* DROPDOWN MENU INBUILT TEMP DISABLE FOR NO USE */}
+                                    {/* <NavDropdown
 
                                         title="Dropdown"
                                         id={`offcanvasNavbarDropdown-expand-${expand}`}
@@ -51,9 +82,12 @@ function Navbar2() {
                                             Something else here
                                         </NavDropdown.Item>
 
-                                    </NavDropdown>
+                                    </NavDropdown> */}
+
                                 </Nav>
-                                <Form className="d-flex">
+
+
+                                {/* <Form className="d-flex">
                                     <Form.Control
                                         type="search"
                                         placeholder="Search"
@@ -61,7 +95,9 @@ function Navbar2() {
                                         aria-label="Search"
                                     />
                                     <Button variant="outline-success">Search</Button>
-                                </Form>
+                                </Form> */}
+
+
                             </Offcanvas.Body>
                         </Navbar.Offcanvas>
                     </Container>

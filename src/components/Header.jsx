@@ -40,20 +40,25 @@ const Header = () => {
                             <Link to='/reach-us-contact'>Reach us</Link>
                         </div>
                     )}
+                    
                     <div className="navbar-collapse collapse" id="navbarCollapse">
                         <ul className="navbar-nav ml-auto">
                             <li>
                                 <Link to='home-main' className='custom-link' spy={true} smooth={true} offset={-100} duration={500}>Home</Link>
                             </li>
+
                             <li>
                                 <Link to='about' className='custom-link' spy={true} smooth={true} offset={50} duration={500}>About </Link>
                             </li>
+
                             <li>
                                 <Link to='services' className='custom-link' spy={true} smooth={true} offset={50} duration={500}>Services</Link>
                             </li>
+
                             <li>
                                 <NavLink to='portfolio' className='custom-link'>Portfolio</NavLink>
                             </li>
+
                             <li>
                                 <Link to='career' className='custom-link' spy={true} smooth={true} offset={2} duration={500}>Career</Link>
                             </li>
