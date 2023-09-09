@@ -1,0 +1,99 @@
+.offcanvas-header {
+    background: #1d407f;
+}
+
+.logo img {
+    width: 100%;
+    max-width: 45px;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+    margin: 0 10px 0 0;
+    box-shadow: inset 0 0px 0 15px #fff;
+    border-radius: 8px;
+    padding: 2px;
+}
+
+.logo h2 span {
+    font-size: 31px;
+    font-weight: 600;
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.logo h2 {
+    margin: 0;
+}
+
+.offcanvas-body {
+    background: #1d407f;
+}
+
+.vertical-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0;
+    list-style: none;
+}
+
+.offcanvas-custom-link {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0px;
+    letter-spacing: 0.5px;
+    position: relative;
+    line-height: 70px;
+    padding: 2px 20px;
+    transition: 0.5s;
+    text-transform: uppercase;
+    margin: 5px 0;
+}
+
+.offcanvas-custom-link:hover {
+    text-decoration: none;
+    color: #ffc800;
+    border-radius: 10px;
+    cursor: pointer;
+    /* Add cursor pointer on hover */
+}
+
+/* Active menu color */
+.offcanvas-menu.active {
+    color: yellow;
+}
+
+.offcanvas-contact_btn {
+    background: linear-gradient(to right, #ff5917, #ff9317);
+    border-radius: 5px;
+    color: #fff;
+    letter-spacing: 0.5px;
+    font-weight: 500;
+    font-size: 18px;
+    overflow: hidden;
+    z-index: 1;
+    text-decoration: none;
+    animation-delay: 2.5s;
+    width: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3rem;
+}
+
+.offcanvas-contact_btn:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.offcanvas-contact_btn:hover:before {
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 0;
+}
