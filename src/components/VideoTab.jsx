@@ -49,11 +49,13 @@ const VideoTab = () => {
                             </div>
                         </div>
                     </div>
+
+                    {/* STAR BURST IF APPLY */}
                     <div className="star">
-                        <img src={star1} alt="Star 1" />
+                        <img src='' alt="Star 1" />
                     </div>
                     <div className="star2">
-                        <img src={star2} alt="Star 2" />
+                        <img src='' alt="Star 2" />
                     </div>
                 </div>
             </div>
