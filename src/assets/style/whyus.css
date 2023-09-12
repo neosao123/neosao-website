@@ -96,3 +96,22 @@
 }
 
 /*.why-us .cloud1{bottom: -128px;}*/
+
+@media (max-width: 768px) {
+    .why-us .small-heading {
+        padding: 0 20px;
+    }
+
+    .why-us .small-heading:after {
+        width: 20px;
+    }
+
+    .why-text {
+        height: auto;
+    }
+
+    .why-text h4:before,
+    .why-text h4:after {
+        bottom: -10px;
+    }
+}
