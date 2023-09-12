@@ -6,9 +6,13 @@ import rocket from '../assets/images/rocket.png'
 import star1 from '../assets/images/star-1.png'
 import star2 from '../assets/images/star-2.png'
 import cloud1 from '../assets/images/cloud1.png'
+import Headers from '../components/Header'
+
+
 const Privacy = () => {
   return (
     <>
+    <Headers />
       <div className="inner-header">
         <div className="container">
           <div className="row">
