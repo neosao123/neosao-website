@@ -1,4 +1,4 @@
-/*testi-main*/
+/* Base styles for larger screens */
 .testi-main {
     background: url(../images/test-bg.png) no-repeat center top;
     text-align: center;
@@ -29,18 +29,11 @@
     position: relative;
     text-align: center;
     margin: 10px;
-    height: 260px;
+    min-height: 260px;
+    /* Use min-height instead of height */
+    overflow: hidden;
+    /* Hide any content that overflows the container */
 }
-
-/* .testi-text:before {
-    position: absolute;
-    right: 40px;
-    bottom: 20px;
-    font-size: 50px;
-    content: "\f10e";
-    font-family: FontAwesome;
-    color: #10429ac7;
-} */
 
 .testi-text p {
     font-style: italic;
@@ -49,6 +42,8 @@
     text-align: center;
     font-size: 15px;
     padding: 0 32px;
+    margin: 0;
+    /* Add margin reset */
 }
 
 .testi-text h4 {
@@ -58,11 +53,24 @@
 }
 
 .testi-text img {
+    max-width: 100%;
     margin: 25px auto 10px;
+    display: block;
 }
 
-.testi-main .bx-viewport {
-    height: auto !important;
+/* Additional styles for smaller screens (e.g., mobile) */
+@media screen and (max-width: 767px) {
+    .testi-main .small-heading {
+        padding: 0 20px 0px 20px;
+    }
+
+    .testi-text {
+        padding: 20px;
+        min-height: auto;
+        /* Adjust the height to fit content on smaller screens */
+    }
+
+    .testi-text img {
+        margin: 15px auto 10px;
+    }
 }
-
-
