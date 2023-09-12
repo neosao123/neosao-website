@@ -32,7 +32,7 @@
     height: 260px;
 }
 
-.testi-text:before {
+/* .testi-text:before {
     position: absolute;
     right: 40px;
     bottom: 20px;
@@ -40,7 +40,7 @@
     content: "\f10e";
     font-family: FontAwesome;
     color: #10429ac7;
-}
+} */
 
 .testi-text p {
     font-style: italic;
