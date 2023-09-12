@@ -18,7 +18,7 @@ function Offcanvas() {
                 <span className="navbar-toggler-icon"></span>
             </button>
 
-            <div className={`offcanvas offcanvas-end${isOffcanvasOpen ? ' show' : ''}`} tabIndex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div className={`offcanvas offcanvas-start${isOffcanvasOpen ? ' show' : ''}`} tabIndex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                 <div className="offcanvas-header">
                     <a className="logo" href="/neosaoweb">
                         <h2><img src={logo} alt="Logo" /> <span>Neosao</span></h2>
