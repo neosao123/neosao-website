@@ -36,7 +36,7 @@ return (
                                 <Link to='services' className='custom-link' spy={true} smooth={true} offset={50} duration={500}>Services</Link>
                             </li>
                             <li>
-                                <NavLink to='portfolio' className='custom-link'>Portfolio</NavLink>
+                                <NavLink to='/portfolio' className='custom-link'>Portfolio</NavLink>
                             </li>
                             <li>
                                 <Link to='career' className='custom-link' spy={true} smooth={true} offset={2} duration={500}>Career</Link>
