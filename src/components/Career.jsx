@@ -1,6 +1,6 @@
 import React from 'react'
 import '../assets/style/career.css'
-import '../assets/style/Responsiveness.css'
+// import '../assets/style/Responsiveness.css'
 import hire from '../assets/images/hire.png'
 import shape2 from '../assets/images/shape-2.png'
 import star2 from '../assets/images/star-2.png'

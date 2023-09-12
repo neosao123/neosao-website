@@ -1,17 +1,19 @@
-/*career*/
+/* Base styles for desktop */
 .career {
     background: #10429a;
     position: relative;
     overflow: hidden;
+    text-align: center;
+    /* Center text horizontally */
 }
 
 .career-img img {
-    width: 100%;
+    max-width: 100%;
+    height: auto;
     animation: animationFramesOne 15s infinite linear;
 }
 
 .career-text {
-    text-align: center;
     padding: 50px 0;
 }
 
@@ -19,6 +21,8 @@
     font-size: 60px;
     color: #fff;
     font-weight: 700;
+    margin: 0;
+    /* Remove default margin to prevent overflow */
 }
 
 .career-text span {
@@ -26,4 +30,65 @@
     color: #ffde3f;
     font-weight: 300;
     letter-spacing: 0.5px;
+}
+
+/* Skill required section */
+.skills {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills ul li {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Media queries for responsive design */
+
+/* For tablets and smaller screens */
+@media screen and (max-width: 768px) {
+    .career-text h5 {
+        font-size: 40px;
+        /* Adjust font size for smaller screens */
+    }
+
+    .career-text span {
+        font-size: 24px;
+        /* Adjust font size for smaller screens */
+    }
+
+    .skills ul li {
+        font-size: 16px;
+        /* Adjust font size for smaller screens */
+    }
+}
+
+/* For mobile phones and smaller screens */
+@media screen and (max-width: 480px) {
+    .career-text {
+        padding: 20px 10px;
+        /* Adjust padding for smaller screens */
+    }
+
+    .career-text h5 {
+        font-size: 30px;
+        /* Adjust font size for even smaller screens */
+    }
+
+    .career-text span {
+        font-size: 18px;
+        /* Adjust font size for even smaller screens */
+    }
+
+    .skills ul li {
+        font-size: 14px;
+        /* Adjust font size for smaller screens */
+    }
 }
