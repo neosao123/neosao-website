@@ -55,6 +55,8 @@ const Terms = () => {
         </div>
       </div>
       {/* NAVBAR END */}
+
+      
       <div className="inner-header">
         <div className="container">
           <div className="row">

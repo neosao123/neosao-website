@@ -1,18 +1,62 @@
 import React from 'react'
 import '../assets/style/policy.css'
 import '../assets/style/Responsiveness.css'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import rocket from '../assets/images/rocket.png'
 import star1 from '../assets/images/star-1.png'
 import star2 from '../assets/images/star-2.png'
 import cloud1 from '../assets/images/cloud1.png'
-import Headers from '../components/Header'
+
+// MANUAL
+import { NavLink } from 'react-router-dom'
+import logo from '../assets/images/logo-icon.png'
+import Offcanvas from './Offcanvas'
 
 const Refund = () => {
   return (
     <>
 
-    <Headers />
+      {/* NAVBAR */}
+      <div className="main-nav">
+        <div className="container">
+          <nav className="navbar navbar-expand-md navbar-dark new-nav">
+            <a className="logo" href="/neosaoweb">
+              <h2><img src={logo} alt="Logo" /> <span>Neosao</span></h2>
+            </a>
+
+            <Offcanvas />
+
+
+            {/* OFFCANVAS BOOTSTRAP */}
+
+
+            {/* OFFCANVAS END */}
+
+            <div className="navbar-collapse collapse" id="navbarCollapse">
+              <ul className="navbar-nav ml-auto">
+                <li>
+                  <Link to='/' className='custom-link' spy={true} smooth={true} offset={-100} duration={500}>Home</Link>
+                </li>
+                <li>
+                  <Link to='/about-content' className='custom-link' spy={true} smooth={true} offset={50} duration={500}>About </Link>
+                </li>
+                <li>
+                  <Link to='/services-contact' className='custom-link' spy={true} smooth={true} offset={50} duration={500}>Services</Link>
+                </li>
+                <li>
+                  <NavLink to='/portfolio' className='custom-link'>Portfolio</NavLink>
+                </li>
+                <li>
+                  <Link to='/career-content' className='custom-link' spy={true} smooth={true} offset={2} duration={500}>Career</Link>
+                </li>
+              </ul>
+              <NavLink to='/reach-us-contact' className="contact_btn">Reach us</NavLink>
+            </div>
+          </nav>
+        </div>
+      </div>
+      {/* NAVBAR END */}
+
       <div className="inner-header">
         <div className="container">
           <div className="row">
