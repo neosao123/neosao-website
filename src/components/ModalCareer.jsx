@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import '../assets/style/modalcareer.css'
+import '../assets/style/modalcareer.css';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 
@@ -13,13 +13,13 @@ function ModalCareer() {
 
     const validationSchema = Yup.object().shape({
         name: Yup.string()
-            .required("First name is required")
+            .required("Name is required")
             .matches(
                 /^[A-Za-z\s]+$/,
-                "First name should only contain alphabetic characters and spaces"
+                "Name should only contain alphabetic characters and spaces"
             )
-            .min(3, "First name must be at least 3 characters")
-            .max(50, "First name cannot be longer than 50 characters"),
+            .min(3, "Name must be at least 3 characters")
+            .max(50, "Name cannot be longer than 50 characters"),
 
         email: Yup.string()
             .email('Invalid email')
@@ -53,6 +53,16 @@ function ModalCareer() {
                 /^[A-Za-z\s,]+$/,
                 'Skills should only contain alphabetic characters, spaces, and commas'
             ),
+
+        expYear: Yup.number()
+            .typeError("Years must be a number")
+            .integer("Years must be an integer")
+            .min(0, "Years cannot be negative"),
+
+        expMonth: Yup.number()
+            .typeError("Months must be a number")
+            .integer("Months must be an integer")
+            .min(0, "Months cannot be negative"),
     });
 
     const formik = useFormik({
@@ -61,8 +71,10 @@ function ModalCareer() {
             email: '',
             phone: '',
             candType: '',
-            resume: null, // Initialize with null for file upload
+            resume: null,
             skills: '',
+            expYear: '',
+            expMonth: '',
         },
         validationSchema,
         onSubmit: (values) => {
@@ -71,6 +83,20 @@ function ModalCareer() {
             handleClose();
         },
     });
+
+    const handleInputChange = (fieldName, inputValue) => {
+        let regexPattern = /^[A-Za-z\s]+$/; // Default pattern for alphabetic characters and spaces
+
+        if (fieldName === 'phone') {
+            regexPattern = /^[0-9]+$/; // Pattern for numeric characters only
+        } else if (fieldName === 'expYear' || fieldName === 'expMonth') {
+            regexPattern = /^[0-9]*$/; // Pattern for numeric characters (allowing empty string)
+        }
+
+        if (regexPattern.test(inputValue) || inputValue === '') {
+            formik.handleChange({ target: { name: fieldName, value: inputValue } });
+        }
+    };
 
     return (
         <>
@@ -87,23 +113,23 @@ function ModalCareer() {
                             <div className="form-group">
                                 <input
                                     type="text"
-                                    className="form-control custom-input"
+                                    className={`form-control custom-input ${formik.touched.name && formik.errors.name ? 'is-invalid' : ''}`}
                                     id="name"
                                     name="name"
                                     placeholder="Name"
-                                    onChange={formik.handleChange}
+                                    onChange={(e) => handleInputChange('name', e.target.value)}
                                     onBlur={formik.handleBlur}
                                     value={formik.values.name}
                                 />
                                 {formik.touched.name && formik.errors.name && (
-                                    <div className="error">{formik.errors.name}</div>
+                                    <div className="invalid-feedback">{formik.errors.name}</div>
                                 )}
                             </div>
 
                             <div className="form-group">
                                 <input
                                     type="email"
-                                    className="form-control custom-input"
+                                    className={`form-control custom-input ${formik.touched.email && formik.errors.email ? 'is-invalid' : ''}`}
                                     id="email"
                                     name="email"
                                     placeholder="Email"
@@ -112,30 +138,30 @@ function ModalCareer() {
                                     value={formik.values.email}
                                 />
                                 {formik.touched.email && formik.errors.email && (
-                                    <div className="error">{formik.errors.email}</div>
+                                    <div className="invalid-feedback">{formik.errors.email}</div>
                                 )}
                             </div>
 
                             <div className="form-group">
                                 <input
                                     type="tel"
-                                    className="form-control custom-input"
+                                    className={`form-control custom-input ${formik.touched.phone && formik.errors.phone ? 'is-invalid' : ''}`}
                                     id="phone"
                                     name="phone"
                                     placeholder="Phone"
-                                    onChange={formik.handleChange}
+                                    onChange={(e) => handleInputChange('phone', e.target.value)}
                                     onBlur={formik.handleBlur}
                                     value={formik.values.phone}
                                 />
                                 {formik.touched.phone && formik.errors.phone && (
-                                    <div className="error">{formik.errors.phone}</div>
+                                    <div className="invalid-feedback">{formik.errors.phone}</div>
                                 )}
                             </div>
 
                             <div className="row">
                                 <div className="col-lg-6 col-md-6 col-xs-12">
                                     <select
-                                        className="form-select"
+                                        className={`form-select ${formik.touched.candType && formik.errors.candType ? 'is-invalid' : ''}`}
                                         id="candType"
                                         name="candType"
                                         onChange={formik.handleChange}
@@ -147,7 +173,7 @@ function ModalCareer() {
                                         <option value="Fresher">Fresher</option>
                                     </select>
                                     {formik.touched.candType && formik.errors.candType && (
-                                        <div className="error">{formik.errors.candType}</div>
+                                        <div className="invalid-feedback">{formik.errors.candType}</div>
                                     )}
                                 </div>
 
@@ -155,7 +181,7 @@ function ModalCareer() {
                                     <div className="form-group">
                                         <input
                                             type="number"
-                                            className="form-control custom-input"
+                                            className={`form-control custom-input ${formik.touched.expYear && formik.errors.expYear ? 'is-invalid' : ''}`}
                                             id="expYear"
                                             name="expYear"
                                             placeholder="Years"
@@ -164,7 +190,7 @@ function ModalCareer() {
                                             value={formik.values.expYear}
                                         />
                                         {formik.touched.expYear && formik.errors.expYear && (
-                                            <div className="error">{formik.errors.expYear}</div>
+                                            <div className="invalid-feedback">{formik.errors.expYear}</div>
                                         )}
                                     </div>
                                 </div>
@@ -173,7 +199,7 @@ function ModalCareer() {
                                     <div className="form-group">
                                         <input
                                             type="number"
-                                            className="form-control custom-input"
+                                            className={`form-control custom-input ${formik.touched.expMonth && formik.errors.expMonth ? 'is-invalid' : ''}`}
                                             id="expMonth"
                                             name="expMonth"
                                             placeholder="Months"
@@ -182,7 +208,7 @@ function ModalCareer() {
                                             value={formik.values.expMonth}
                                         />
                                         {formik.touched.expMonth && formik.errors.expMonth && (
-                                            <div className="error">{formik.errors.expMonth}</div>
+                                            <div className="invalid-feedback">{formik.errors.expMonth}</div>
                                         )}
                                     </div>
                                 </div>
@@ -191,7 +217,7 @@ function ModalCareer() {
                             <div className="form-group">
                                 <input
                                     type="file"
-                                    className="form-control custom-input"
+                                    className={`form-control custom-input ${formik.touched.resume && formik.errors.resume ? 'is-invalid' : ''}`}
                                     id="resume"
                                     name="resume"
                                     onChange={(event) =>
@@ -200,7 +226,7 @@ function ModalCareer() {
                                     onBlur={formik.handleBlur}
                                 />
                                 {formik.touched.resume && formik.errors.resume && (
-                                    <div className="error">{formik.errors.resume}</div>
+                                    <div className="invalid-feedback">{formik.errors.resume}</div>
                                 )}
                             </div>
 
@@ -208,7 +234,7 @@ function ModalCareer() {
                                 <textarea
                                     id="skills"
                                     name="skills"
-                                    className="form-control custom-input"
+                                    className={`form-control custom-input ${formik.touched.skills && formik.errors.skills ? 'is-invalid' : ''}`}
                                     rows="3"
                                     placeholder="Skills"
                                     onChange={formik.handleChange}
@@ -216,18 +242,17 @@ function ModalCareer() {
                                     value={formik.values.skills}
                                 ></textarea>
                                 {formik.touched.skills && formik.errors.skills && (
-                                    <div className="error">{formik.errors.skills}</div>
+                                    <div className="invalid-feedback">{formik.errors.skills}</div>
                                 )}
                             </div>
                         </form>
                     </Modal.Body>
 
-
                     <Modal.Footer>
                         <Button variant="secondary" onClick={handleClose}>
                             Cancel
                         </Button>
-                        <Button className='submit-btn' variant="primary" onClick={formik.handleSubmit}>
+                        <Button className='submit-btn' variant="primary" onClick={formik.handleSubmit} disabled={!formik.isValid}>
                             Submit
                         </Button>
                     </Modal.Footer>
