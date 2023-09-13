@@ -1,6 +1,6 @@
 import React from 'react'
 import '../assets/style/careerContent.css'
-import '../assets/style/Responsiveness.css'
+// import '../assets/style/Responsiveness.css'
 import { Link } from 'react-router-dom'
 import rocket from '../assets/images/rocket.png'
 import star1 from '../assets/images/star-1.png'
@@ -77,7 +77,7 @@ const careerContent = () => {
                   {/* <a href="#" data-toggle="modal" data-target="#exampleModalCenter" className='mb-2'>
                     Apply Now
                   </a> */}
-                  <ModalCareer />
+                  <ModalCareer/>
                 </div>
               </div>
             </div>
@@ -100,7 +100,7 @@ const careerContent = () => {
                   {/* <a href="#" data-toggle="modal" data-target="#exampleModalCenter" className='mb-2'>
                     Apply Now
                   </a> */}
-                  <ModalCareer />
+                  <ModalCareer/>
                 </div>
               </div>
             </div>
@@ -123,7 +123,7 @@ const careerContent = () => {
                   {/* <a href="#" data-toggle="modal" data-target="#exampleModalCenter" className='mb-2'>
                     Apply Now
                   </a> */}
-                  <ModalCareer />
+                  <ModalCareer/>
                 </div>
               </div>
             </div>
@@ -146,7 +146,7 @@ const careerContent = () => {
                   {/* <a href="#" data-toggle="modal" data-target="#exampleModalCenter" className='mb-2'>
                     Apply Now
                   </a> */}
-                  <ModalCareer />
+                  <ModalCareer/>
                 </div>
               </div>
             </div>

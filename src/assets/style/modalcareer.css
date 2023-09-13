@@ -1,21 +1,6 @@
 /* Common styles for both desktop and mobile */
-.imported-btn {
-    color: #fff;
-    background: linear-gradient(to right, #ff5917, #ff9317);
-    font-size: 12px;
-    padding: 7px 14px;
-    /* Reduce padding for smaller screens */
-    display: inline-block;
-    border-radius: 30px;
-    letter-spacing: 0.5px;
-    margin: 10px 0 2px;
-    /* Slightly reduce bottom margin for smaller screens */
-    text-decoration: none;
-    transition: 0.5s;
-    margin-right: 0;
-    /* Remove right margin for smaller screens */
-    border: none !important;
-}
+
+
 
 .full-form {
     border: 1px solid #ced4da;

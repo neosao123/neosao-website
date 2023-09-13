@@ -77,10 +77,13 @@ function ModalCareer() {
             expMonth: '',
         },
         validationSchema,
-        onSubmit: (values) => {
+        onSubmit: (values, { resetForm }) => {
             // Handle form submission here
             console.log(values);
             handleClose();
+
+            // Reset the form after successful submission
+            resetForm();
         },
     });
 
