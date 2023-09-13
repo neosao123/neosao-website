@@ -61,6 +61,23 @@
         margin-bottom: 10px;
         /* Restore margin for better spacing on smaller screens */
     }
+
+    .title {
+        padding-left: 20px;
+        /* Adjust the title padding for smaller screens */
+    }
+
+    .full-form {
+        padding: 0.2rem;
+        /* Adjust padding for smaller screens */
+    }
+
+    .submit-btn {
+        padding: 8px 12px;
+        /* Adjust button padding for smaller screens */
+        font-size: 12px;
+        /* Decrease font size for smaller screens */
+    }
 }
 
 /* Rest of your styles remain the same */
