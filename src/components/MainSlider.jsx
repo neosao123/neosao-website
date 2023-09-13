@@ -5,10 +5,10 @@ import '../assets/style/animation.css'
 import justBanner from '../assets/images/just_banner.png'
 import justBanner1 from '../assets/images/just_banner1.png'
 import justBanner2 from '../assets/images/just_banner2.png'
-import justBanner3 from '../assets/images/just_banner3.png'
+// import justBanner3 from '../assets/images/just_banner3.png'
 import justBanner4 from '../assets/images/just_banner4.png'
 import shape5 from '../assets/images/shape-5.png'
-import shape1 from '../assets/images/shape-1.png'
+// import shape1 from '../assets/images/shape-1.png'
 import star1 from '../assets/images/star-1.png'
 import star2 from '../assets/images/star-2.png'
 import b4six from '../assets/images/b4-dot-6.png'
@@ -22,10 +22,7 @@ import { Navigation, Pagination, Scrollbar, A11y, EffectFade, Autoplay } from 's
 // Import Swiper styles
 import 'swiper/css/bundle';
 // Import Swiper styles
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
-import 'swiper/css/autoplay';
+
 
 // EFFECT
 
