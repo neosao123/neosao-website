@@ -1,52 +1,11 @@
+/* SWIPER */
 
-.main-slider{
-    padding-top: 150px;
-}
-
-.slider-text .contact_btn {
-    background: linear-gradient(to right, #ff5917, #ff9317);
-    padding: 15px 30px;
-    border-radius: 5px;
-    border: 0;
-    color: #fff;
-    letter-spacing: 0.5px;
-    font-weight: 500;
-    font-size: 18px;
-    margin: 30px 0 0;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    display: inline-block;
-    text-decoration: none;
-    animation-delay: 2.5s;
-}
-
-.slider-text .contact_btn:before {
-    position: absolute;
-    right: 4px;
-    top: 4px;
-    bottom: 4px;
-    background-color: #10429a;
-    -webkit-transition: all 0.3s ease-out 0s;
-    transition: all 0.3s ease-out 0s;
-    content: "";
-    z-index: -1;
-    width: 70px;
-    border-radius: 30px;
-}
-
-.slider-text .contact_btn:hover:before {
-    width: 100%;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    border-radius: 0;
-}
+/* SWIPER END */
 
 /*main-slider*/
 .main-slider {
     position: relative;
-    margin-top: 0;
+    margin-top: 6rem;
     overflow: hidden;
     background-image: linear-gradient(to top, #d9d9dc33, #ffed6c00);
 }
@@ -117,5 +76,56 @@
     padding: 3px 0 0 10px;
 }
 
-/*.pattern-1{position: absolute; top: 98px; left: 0;}
-.pattern-1 img{width: 50%;}*/
+.dot-6 {
+    width: 225px;
+    height: 230px;
+    border-radius: 0 50px 0 50px;
+    border: 30px solid #ffffff14;
+    position: absolute;
+    top: 30px;
+    left: 85px;
+    z-index: -1;
+    animation: zoom-in-zoom-out 20s ease infinite;
+}
+
+@keyframes zoom-in-zoom-out {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transform: scale(1.2, 1.2);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .main-slider {
+        margin-top: 3rem;
+    }
+
+    .slider-text {
+        top: 80px;
+        left: 20px;
+    }
+
+    .slider-text h2 {
+        font-size: 36px;
+        line-height: 50px;
+    }
+
+    .slider-text p {
+        font-size: 16px;
+    }
+
+    .dot-6 {
+        width: 150px;
+        height: 150px;
+        top: 10px;
+        left: 20px;
+    }
+}
