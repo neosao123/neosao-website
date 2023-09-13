@@ -9,6 +9,23 @@
     z-index: -1;
 }
 
+.inner-career .small-heading {
+    text-align: center;
+    display: inline-block;
+    padding: 0 50px 0px 50px;
+    color: #fff;
+}
+
+.inner-career .small-heading:after {
+    position: absolute;
+    width: 37px;
+    height: 3px;
+    background: #ff4a17;
+    top: 10px;
+    right: 0;
+    content: '';
+}
+
 .career-icon {
     float: left;
     font-size: 50px;
