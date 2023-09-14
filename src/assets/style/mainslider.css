@@ -5,9 +5,10 @@
 /*main-slider*/
 .main-slider {
     position: relative;
-    margin-top: 6rem;
+    margin-top: 5rem;
     overflow: hidden;
     background-image: linear-gradient(to top, #d9d9dc33, #ffed6c00);
+    
 }
 
 .slider-img img {

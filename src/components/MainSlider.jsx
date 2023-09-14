@@ -41,6 +41,7 @@ const MainSlider = () => {
     <>
 
       <div className="main-slider" id="index">
+      
 
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y, EffectFade, Autoplay]}
@@ -187,9 +188,12 @@ const MainSlider = () => {
         </Swiper>
 
         {/* SWIPER END */}
+        
 
 
       </div>
+
+      
 
 
 
