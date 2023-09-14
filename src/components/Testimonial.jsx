@@ -1,7 +1,5 @@
 import React from 'react'
 import '../assets/style/testimonial.css'
-import '../assets/style/Responsiveness.css'
-// import '../assets/style/animation.css'
 import kulkarni from '../assets/images/kulkarni.png'
 import shivam from '../assets/images/shivam_pandey.png'
 import tejas from '../assets/images/tejas_kothari.png'
