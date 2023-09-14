@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import MainSlider from '../components/MainSlider'
 import Career from '../components/Career'
 import Services from '../components/Services'

@@ -24,7 +24,7 @@ import { Pagination, Autoplay } from 'swiper/modules';
 
 const Testimonial = () => {
   return (
-    <> 
+    <>
 
       <div className="testi-main tnb">
         <div className="container">
@@ -41,11 +41,16 @@ const Testimonial = () => {
             <Swiper
               slidesPerView={2}
               spaceBetween={30}
-              autoplay={{ delay: 3000 }}
-              pagination={{
-                clickable: true,
+              autoplay={{
+                delay: 3000,
+                disableOnInteraction: false
               }}
-              modules={[Autoplay,Pagination ]}
+              
+              pagination={{
+                clickable: false,
+              }}
+              
+              modules={[Autoplay, Pagination]}
               className="mySwiper">
 
               {/* SLIDE-1 */}
