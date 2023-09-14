@@ -16,7 +16,7 @@ const Home = () => {
             <Header />
             <div id='home-main'>
                 <MainSlider />
-                <Cloud />
+                {/* <Cloud /> */}
                 <AboutUs />
                 <WhyUs />
                 <Services />

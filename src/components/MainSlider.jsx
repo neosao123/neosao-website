@@ -41,7 +41,6 @@ const MainSlider = () => {
     <>
 
       <div className="main-slider" id="index">
-      
 
         <Swiper
           modules={[Navigation, Pagination, Scrollbar, A11y, EffectFade, Autoplay]}
@@ -55,7 +54,7 @@ const MainSlider = () => {
 
 
           {/* Slide 1 */}
-          <SwiperSlide style={{ backgroundColor: '#f9f9f9' }}>
+          <SwiperSlide>
             <div>
               <div className="slider-img animatedParent">
                 <img src={justBanner} alt="Banner 1" />
@@ -85,13 +84,11 @@ const MainSlider = () => {
               <img src={b4six} alt="Dot 6" />
             </div>
             {/* BACKGROUND */}
-            
-            
           </SwiperSlide>
 
 
           {/* Slide 2 */}
-          <SwiperSlide style={{ backgroundColor: '#f9f9f9' }}>
+          <SwiperSlide>
             <div>
               <div className="slider-img animatedParent">
                 <img src={justBanner1} alt="Banner 2" />
@@ -106,24 +103,24 @@ const MainSlider = () => {
 
             {/* BACKGROUND */}
             <div className="shap1">
-              <img src={shape5} alt="Shape 1" />
-            </div>
-            <div className="star1">
-              <img src={star1} alt="Star 1" />
-            </div>
-            <div className="star2">
-              <img src={star2} alt="Star 2" />
-            </div>
-            <div className="dot-6">
-              <img src={b4six} alt="Dot 6" />
-            </div>
+          <img src={shape5} alt="Shape 1" />
+        </div>
+        <div className="star1">
+          <img src={star1} alt="Star 1" />
+        </div>
+        <div className="star2">
+          <img src={star2} alt="Star 2" />
+        </div>
+        <div className="dot-6">
+          <img src={b4six} alt="Dot 6" />
+        </div>
             {/* BACKGROUND */}
 
           </SwiperSlide>
 
 
           {/* Slide 3 */}
-          <SwiperSlide style={{ backgroundColor: '#f9f9f9' }}>
+          <SwiperSlide>
             <div>
               <div className="slider-img animatedParent">
                 <img src={justBanner2} alt="Banner 3" />
@@ -135,27 +132,27 @@ const MainSlider = () => {
                 </div>
               </div>
             </div>
-
+            
             {/* BACKGROUND */}
             <div className="shap1">
-              <img src={shape5} alt="Shape 1" />
-            </div>
-            <div className="star1">
-              <img src={star1} alt="Star 1" />
-            </div>
-            <div className="star2">
-              <img src={star2} alt="Star 2" />
-            </div>
-            <div className="dot-6">
-              <img src={b4six} alt="Dot 6" />
-            </div>
+          <img src={shape5} alt="Shape 1" />
+        </div>
+        <div className="star1">
+          <img src={star1} alt="Star 1" />
+        </div>
+        <div className="star2">
+          <img src={star2} alt="Star 2" />
+        </div>
+        <div className="dot-6">
+          <img src={b4six} alt="Dot 6" />
+        </div>
             {/* BACKGROUND */}
 
           </SwiperSlide>
 
 
           {/* Slide 4 */}
-          <SwiperSlide style={{ backgroundColor: '#f9f9f9' }}>
+          <SwiperSlide>
             <div>
               <div className="slider-img animatedParent">
                 <img src={justBanner4} alt="Banner 5" />
@@ -167,33 +164,30 @@ const MainSlider = () => {
                 </div>
               </div>
             </div>
-
+            
             {/* BACKGROUND */}
             <div className="shap1">
-              <img src={shape5} alt="Shape 1" />
-            </div>
-            <div className="star1">
-              <img src={star1} alt="Star 1" />
-            </div>
-            <div className="star2">
-              <img src={star2} alt="Star 2" />
-            </div>
-            <div className="dot-6">
-              <img src={b4six} alt="Dot 6" />
-            </div>
+          <img src={shape5} alt="Shape 1" />
+        </div>
+        <div className="star1">
+          <img src={star1} alt="Star 1" />
+        </div>
+        <div className="star2">
+          <img src={star2} alt="Star 2" />
+        </div>
+        <div className="dot-6">
+          <img src={b4six} alt="Dot 6" />
+        </div>
             {/* BACKGROUND */}
 
           </SwiperSlide>
-
+          
         </Swiper>
 
         {/* SWIPER END */}
-        
-
+       
 
       </div>
-
-      
 
 
 

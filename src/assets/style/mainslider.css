@@ -8,7 +8,7 @@
     margin-top: 5rem;
     overflow: hidden;
     background-image: linear-gradient(to top, #d9d9dc33, #ffed6c00);
-    
+
 }
 
 .slider-img img {
@@ -93,97 +93,30 @@
     }
 }
 
+/* Add media queries for responsive design */
 
-
-/* CLOUD */
-
-
-
-/*animation*/
-/* .top-cloud {
-    -webkit-animation: upDown 10s infinite alternate;
-    animation: upDown 5s infinite alternate;
-    position: absolute;
-    margin: -127px 0 0;
-    opacity: 0.5;
-}
-
-.top-cloud img {
-    width: 100%;
-}
-
-@keyframes upDown {
-    0% {
-        transform: translateY(0);
+@media (max-width: 768px) {
+    .main-slider {
+        margin-top: 3rem;
     }
 
-    100% {
-        transform: translateY(-10px);
-    }
-}
-
-.top-cloud1 {
-    -webkit-animation: DownUp 10s infinite alternate;
-    animation: DownUp 5s infinite alternate;
-    position: relative;
-    margin: -95px 0 0;
-}
-
-.top-cloud1 img {
-    width: 100%;
-}
-
-@keyframes DownUp {
-    100% {
-        transform: translateY(0);
+    .slider-text {
+        top: 80px;
+        left: 20px;
     }
 
-    0% {
-        transform: translateY(-10px);
-    }
-}
-
-.opening {
-    -webkit-animation: DownUpOpening 10s infinite alternate;
-    animation: DownUpOpening 5s infinite alternate;
-    position: relative;
-    margin: -100px 0 0;
-}
-
-.opening img {
-    width: 100%;
-}
-
-@keyframes DownUpOpening {
-    100% {
-        transform: translateY(0);
+    .slider-text h2 {
+        font-size: 30px;
+        line-height: 45px;
     }
 
-    0% {
-        transform: translateY(-10px);
-    }
-}
-
-.opening1 {
-    -webkit-animation: DownUpOpening1 10s infinite alternate;
-    animation: DownUpOpening1 5s infinite alternate;
-    position: relative;
-    margin: -110px 0 0;
-}
-
-.opening1 img {
-    width: 100%;
-}
-
-@keyframes DownUpOpening1 {
-    100% {
-        transform: translateY(0);
+    .slider-text p {
+        font-size: 16px;
     }
 
-    0% {
-        transform: translateY(-10px);
+    .slider-text .more {
+        font-size: 14px;
+        padding: 10px 20px;
+        margin: 20px 0 0;
     }
-} */
-
-
-/*animation*/
+}
