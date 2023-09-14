@@ -1,3 +1,8 @@
+
+.cloud-cloud{
+    margin-top: 8rem;
+}
+
 /*animation*/
 .top-cloud {
     -webkit-animation: upDown 10s infinite alternate;

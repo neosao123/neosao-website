@@ -12,6 +12,7 @@ import { Loader } from '../components/Loader'
 import Footer from '../components/Footer'
 import InnerHeader from '../components/InnerHeader'
 import Offcanvas from '../components/Offcanvas'
+import Cloud from '../components/Cloud'
 
 
 
@@ -62,6 +63,7 @@ const Allroutes = () => {
                 <Route path='*' element={<Error />} />
                 <Route path='inner-header' element={<InnerHeader />} />
                 <Route path='canvas' element={<Offcanvas />} />
+                <Route path='cloud' element={<Cloud />} />
             </Routes>
             <Footer />
         </Suspense>

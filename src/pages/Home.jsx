@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import MainSlider from '../components/MainSlider'
 import Career from '../components/Career'
 import Services from '../components/Services'
@@ -16,7 +16,7 @@ const Home = () => {
             <Header />
             <div id='home-main'>
                 <MainSlider />
-                <Cloud />
+                {/* <Cloud /> */}
                 <AboutUs />
                 <WhyUs />
                 <Services />
