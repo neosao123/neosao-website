@@ -24,10 +24,7 @@ import { Pagination, Autoplay } from 'swiper/modules';
 
 const Testimonial = () => {
   return (
-    <>
-
-
-
+    <> 
 
       <div className="testi-main tnb">
         <div className="container">
@@ -44,105 +41,58 @@ const Testimonial = () => {
             <Swiper
               slidesPerView={2}
               spaceBetween={30}
-              autoplay={{ delay: 2000 }}
+              autoplay={{ delay: 3000 }}
               pagination={{
                 clickable: true,
               }}
-              modules={[Pagination, Autoplay]}
-              className="mySwiper"
-            >
+              modules={[Autoplay,Pagination ]}
+              className="mySwiper">
 
               {/* SLIDE-1 */}
               <SwiperSlide>
-                
-                  <div className="testi-text">
-                    <p>"Excellent customer service , On time deployment of Projects."</p>
-                    <img src={kulkarni} alt="Raghunandan Kulkarni" />
-                    <h4>Raghunandan Kulkarni</h4>
-                  </div>
-                
+
+                <div className="testi-text">
+                  <p>"Excellent customer service , On time deployment of Projects."</p>
+                  <img src={kulkarni} alt="Raghunandan Kulkarni" />
+                  <h4>Raghunandan Kulkarni</h4>
+                </div>
+
               </SwiperSlide>
 
               {/* SLIDE-2 */}
               <SwiperSlide>
-                
-                  <div className="testi-text">
-                    <p>"Excellent development team. They put extra efforts in completing the tasks unlike others who just complain about timings and budget."</p>
-                    <img src={shivam} alt="Shivam Pandey" />
-                    <h4>Shivam Pandey</h4>
-                  </div>
-                
+
+                <div className="testi-text">
+                  <p>"Excellent development team. They put extra efforts in completing the tasks unlike others who just complain about timings and budget."</p>
+                  <img src={shivam} alt="Shivam Pandey" />
+                  <h4>Shivam Pandey</h4>
+                </div>
+
               </SwiperSlide>
 
               {/* SLIDE-3 */}
               <SwiperSlide>
-                
-                  <div className="testi-text">
-                    <p>"Dedicated web, android app development team."</p>
-                    <img src={tejas} alt="Tejas Kothari" />
-                    <h4>Tejas Kothari</h4>
-                  </div>
-                
+
+                <div className="testi-text">
+                  <p>"Dedicated web, android app development team."</p>
+                  <img src={tejas} alt="Tejas Kothari" />
+                  <h4>Tejas Kothari</h4>
+                </div>
+
               </SwiperSlide>
 
               {/* SLIDE-4 */}
               <SwiperSlide>
-                
-                  <div className="testi-text">
-                    <p>"Exceptional technology company. Immensely knowledgeable, professional and committed. Shubham and his team knows how to deliver great projects with minimal errors & on time delivery. We strongly recommend Neosao for all your tech needs. Grt Job!"</p>
-                    <h4>VirtNexus Technologies</h4>
-                  </div>
-                
+
+                <div className="testi-text">
+                  <p>"Exceptional technology company. Immensely knowledgeable, professional and committed. Shubham and his team knows how to deliver great projects with minimal errors & on time delivery. We strongly recommend Neosao for all your tech needs. Grt Job!"</p>
+                  <h4>VirtNexus Technologies</h4>
+                </div>
+
               </SwiperSlide>
             </Swiper>
 
             {/* SWIPER END */}
-
-
-
-            {/* ORIGINAL */}
-
-            {/* <div className="col-md-6 col-sm-6 col-xs-12">
-              <div className="testi-text">
-                <p>"Excellent customer service , On time deployment of Projects."</p>
-                <img src={kulkarni} alt="Raghunandan Kulkarni" />
-                <h4>Raghunandan Kulkarni</h4>
-              </div>
-            </div>
-
-
-
-            <div className="col-md-6 col-sm-6 col-xs-12">
-              <div className="testi-text">
-                <p>"Excellent development team. They put extra efforts in completing the tasks unlike others who just complain about timings and budget."</p>
-                <img src={shivam} alt="Shivam Pandey" />
-                <h4>Shivam Pandey</h4>
-              </div>
-            </div>
-
-
-
-
-
-
-            <div className="col-md-6 col-sm-6 col-xs-12">
-              <div className="testi-text">
-                <p>"Dedicated web, android app development team."</p>
-                <img src={tejas} alt="Tejas Kothari" />
-                <h4>Tejas Kothari</h4>
-              </div>
-            </div>
-
-
-            <div className="col-md-6 col-sm-6 col-xs-12">
-              <div className="testi-text">
-                <p>"Exceptional technology company. Immensely knowledgeable, professional and committed. Shubham and his team knows how to deliver great projects with minimal errors & on time delivery. We strongly recommend Neosao for all your tech needs. Grt Job!"</p>
-                <h4>VirtNexus Technologies</h4>
-              </div>
-            </div> */}
-
-            {/* OROGINAL */}
-
           </div>
         </div>
         <div className="star3">

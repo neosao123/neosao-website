@@ -16,6 +16,18 @@
     align-items: center;
 }
 
+/* Adjust the placement of Swiper pagination dots */
+/* Change active pagination dot color to red */
+.mySwiper .swiper-pagination-bullet-active {
+    background-color: red !important;
+    /* Use !important to override any existing styles */
+
+}
+
+
+
+
+
 
 
 /* SWIPER CSS END */
@@ -54,7 +66,25 @@
     height: 260px;
 }
 
+
 .testi-text:before {
+    position: absolute;
+    right: 40px;
+    bottom: 20px;
+    width: 50px;
+    /* Adjust the width as needed */
+    height: 50px;
+    /* Adjust the height as needed */
+    background-image: url('../images//quote.png');
+    /* Replace 'path_to_your_icon.png' with the actual path to your icon */
+    background-size: cover;
+    /* Adjust as needed */
+    content: "";
+    /* Remove the content property */
+}
+
+
+/* .testi-text:before {
     position: absolute;
     right: 40px;
     bottom: 20px;
@@ -62,7 +92,7 @@
     content: "\f10e";
     font-family: FontAwesome;
     color: #10429ac7;
-}
+} */
 
 .testi-text p {
     font-style: italic;
