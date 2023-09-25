@@ -11,26 +11,61 @@ import { Link } from 'react-router-dom';
 import InnerHeader from '../components/InnerHeader';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
+import emailjs from 'emailjs-com';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'; // Import the styles
+
+
 
 const ReachUsContent = () => {
-  
-  // Define Yup validation schema
   const validationSchema = Yup.object().shape({
-    name: Yup.string().required('Name is required'),
-    email: Yup.string().email('Invalid email address').required('Email is required'),
-    phone: Yup.string().required('Phone is required'),
-    subject: Yup.string().required('Subject is required'),
-    requestDetails: Yup.string().required('Message is required'),
+    name: Yup.string()
+      .required('Name is required')
+      .matches(/^[A-Za-z\s]+$/, 'Name should only contain alphabetical characters and spaces'),
+    email: Yup.string()
+      .email('Invalid email address')
+      .required('Email is required'),
+    phone: Yup.string()
+      .matches(/^[0-9]{10}$/, 'Phone number should be exactly 10 digits')
+      .required('Phone is required'),
+    subject: Yup.string()
+      .min(5, 'Subject should be at least 5 characters long')
+      .required('Subject is required'),
+    requestDetails: Yup.string()
+      .min(10, 'Message should be at least 10 characters long')
+      .required('Message is required')
+
   });
 
   // Form submission function
-  const handleSubmit = (values, { resetForm }) => {
-    // Handle form submission logic here
-    console.log(values);
-    // You can make API calls or any other actions here
+  const handleSubmit = async (values, { resetForm }) => {
+    try {
+      // Send email using emailjs
+      await emailjs.send('service_0k7o6xi', 'template_zqaomvy', {
+        name: values.name,
+        email: values.email,
+        phone: values.phone,
+        subject: values.subject,
+        requestDetails: values.requestDetails,
+      }, 'W0XpjwDO-srhytALL');
 
-    // Reset the form after submission
-    resetForm();
+      // Show success toast
+      toast.success('Email sent successfully', {
+        position: 'top-right',
+        autoClose: 3000, // Close the toast after 3 seconds (adjust as needed)
+      });
+
+      // Reset the form after submission
+      resetForm();
+    } catch (error) {
+      // Show error toast
+      toast.error('Email send failed', {
+        position: 'top-right',
+        autoClose: 3000, // Close the toast after 3 seconds (adjust as needed)
+      });
+
+      console.error('Email send failed:', error);
+    }
   };
   return (
     <>
@@ -214,18 +249,24 @@ const ReachUsContent = () => {
             </div>
           </div>
         </div>
+
+
         <div className="col-lg-12 pnm">
           <div className="map">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15285.90439903605!2d74.24087!3d16.70308!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x46ee8141fe417698!2sNeoSao%20Services%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1630470855729!5m2!1sen!2sin"
               width="100%"
               height="250"
-              style={{ border: "0" }}
-              allowFullScreen
+              style={{ border: '0' }}
+              allowFullScreen=""
               loading="lazy"
             ></iframe>
           </div>
         </div>
+
+
+
+
       </div>;
     </>
 
