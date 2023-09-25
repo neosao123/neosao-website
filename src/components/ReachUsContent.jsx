@@ -1,19 +1,40 @@
-import React from 'react'
-import '../assets/style/reachuscontent.css'
-import '../assets/style/Responsiveness.css'
-import rocket from '../assets/images/rocket.png'
-import star1 from '../assets/images/star-1.png'
-import star2 from '../assets/images/star-2.png'
-import cloud1 from '../assets/images/cloud1.png'
-import parra from '../assets/images/parra-icn.png'
+import React from 'react';
+import '../assets/style/reachuscontent.css';
+import '../assets/style/Responsiveness.css';
+import rocket from '../assets/images/rocket.png';
+import star1 from '../assets/images/star-1.png';
+import star2 from '../assets/images/star-2.png';
+import cloud1 from '../assets/images/cloud1.png';
+import parra from '../assets/images/parra-icn.png';
 import { FaMapMarkerAlt, FaPhoneVolume, FaEnvelope, FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
-import { Link } from 'react-router-dom'
-import InnerHeader from '../components/InnerHeader'
+import { Link } from 'react-router-dom';
+import InnerHeader from '../components/InnerHeader';
+import { Formik, Form, Field, ErrorMessage } from 'formik';
+import * as Yup from 'yup';
 
 const ReachUsContent = () => {
+  
+  // Define Yup validation schema
+  const validationSchema = Yup.object().shape({
+    name: Yup.string().required('Name is required'),
+    email: Yup.string().email('Invalid email address').required('Email is required'),
+    phone: Yup.string().required('Phone is required'),
+    subject: Yup.string().required('Subject is required'),
+    requestDetails: Yup.string().required('Message is required'),
+  });
+
+  // Form submission function
+  const handleSubmit = (values, { resetForm }) => {
+    // Handle form submission logic here
+    console.log(values);
+    // You can make API calls or any other actions here
+
+    // Reset the form after submission
+    resetForm();
+  };
   return (
     <>
-    <InnerHeader/>
+      <InnerHeader />
       <div className="inner-header">
         <div className="container">
           <div className="row">
@@ -113,60 +134,82 @@ const ReachUsContent = () => {
             <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
               <div className="inner-con-left">
                 <h4>Send your Request</h4>
-                <form id="sendform">
-                  <div className="form-group">
-                    <input
-                      type="name"
-                      className="form-control"
-                      id="name"
-                      name="name"
-                      placeholder="Name"
-                    />
-                  </div>
-                  <div className="form-group">
-                    <input
-                      type="email"
-                      className="form-control"
-                      id="email"
-                      name="email"
-                      placeholder="Email"
-                    />
-                  </div>
-                  <div className="form-group">
-                    <input
-                      type="number"
-                      className="form-control"
-                      id="phone"
-                      name="phone"
-                      placeholder="Phone"
-                    />
-                  </div>
-                  <div className="form-group">
-                    <input
-                      type="text"
-                      className="form-control"
-                      id="subject"
-                      name="subject"
-                      placeholder="Subject"
-                    />
-                  </div>
-                  <div className="form-group">
-                    <textarea
-                      id="requestDetails"
-                      name="requestDetails"
-                      className="form-control"
-                      rows="4"
-                      placeholder="Message*"
-                      required
-                    ></textarea>
-                  </div>
-                  <div className="animated fadeInDownShort go" style={{ textAlign: "center" }}>
-                    <button type="button" className="btn btn-primary" id="send">
-                      Submit
-                    </button>
-                    {/*<a href="contact.php" className="contact_btn">Submit</a>*/}
-                  </div>
-                </form>
+
+
+                <Formik
+                  initialValues={{
+                    name: '',
+                    email: '',
+                    phone: '',
+                    subject: '',
+                    requestDetails: '',
+                  }}
+                  validationSchema={validationSchema}
+                  onSubmit={handleSubmit}
+                >
+                  <Form id="sendform">
+                    <div className="form-group">
+                      <Field
+                        type="text"
+                        className="form-control"
+                        id="name"
+                        name="name"
+                        placeholder="Name"
+                      />
+                      <ErrorMessage name="name" component="div" className="error" />
+                    </div>
+                    <div className="form-group">
+                      <Field
+                        type="email"
+                        className="form-control"
+                        id="email"
+                        name="email"
+                        placeholder="Email"
+                      />
+                      <ErrorMessage name="email" component="div" className="error" />
+                    </div>
+                    <div className="form-group">
+                      <Field
+                        type="text"
+                        className="form-control"
+                        id="phone"
+                        name="phone"
+                        placeholder="Phone"
+                      />
+                      <ErrorMessage name="phone" component="div" className="error" />
+                    </div>
+                    <div className="form-group">
+                      <Field
+                        type="text"
+                        className="form-control"
+                        id="subject"
+                        name="subject"
+                        placeholder="Subject"
+                      />
+                      <ErrorMessage name="subject" component="div" className="error" />
+                    </div>
+                    <div className="form-group">
+                      <Field
+                        as="textarea"
+                        id="requestDetails"
+                        name="requestDetails"
+                        className="form-control"
+                        rows="4"
+                        placeholder="Message*"
+                        required
+                      />
+                      <ErrorMessage name="requestDetails" component="div" className="error" />
+                    </div>
+                    <div className="animated fadeInDownShort go" style={{ textAlign: "center" }}>
+                      <button type="submit" className="btn btn-primary" id="send">
+                        Submit
+                      </button>
+                    </div>
+                  </Form>
+                </Formik>
+
+
+
               </div>
             </div>
           </div>
