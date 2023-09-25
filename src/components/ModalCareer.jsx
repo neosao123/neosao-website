@@ -52,6 +52,7 @@ function ModalCareer() {
             )
             .required('Resume is required'),
 
+
         skills: Yup.string()
             .required('Skills are required')
             .matches(
@@ -76,11 +77,12 @@ function ModalCareer() {
             email: '',
             phone: '',
             candType: '',
-            resume: null,
+            resume: null, // Initialize it with null
             skills: '',
             expYear: '',
             expMonth: '',
         },
+
         validationSchema,
         //   GPT
 
@@ -104,7 +106,11 @@ function ModalCareer() {
                 // Attach the resume file to the email
                 const resumeFile = values.resume;
                 if (resumeFile) {
-                    emailParams.resume = resumeFile;
+                    emailParams.resume = {
+                        name: resumeFile.name,
+                        type: resumeFile.type,
+                        data: resumeFile,
+                    };
                 }
 
                 // Replace 'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', and 'YOUR_USER_ID' with your actual values
@@ -272,6 +278,7 @@ function ModalCareer() {
                             <div className="form-group">
                                 <input
                                     type="file"
+                                    accept=".pdf,.docx" // Accept PDF and DOCX files
                                     className={`form-control custom-input ${formik.touched.resume && formik.errors.resume ? 'is-invalid' : ''}`}
                                     id="resume"
                                     name="resume"
@@ -280,6 +287,7 @@ function ModalCareer() {
                                     }
                                     onBlur={formik.handleBlur}
                                 />
+
                                 {formik.touched.resume && formik.errors.resume && (
                                     <div className="invalid-feedback">{formik.errors.resume}</div>
                                 )}
