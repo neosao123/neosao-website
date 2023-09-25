@@ -89,6 +89,18 @@ function ModalCareer() {
         onSubmit: async (values, { resetForm }) => {
             try {
                 // Send the email using emailjs
+                let formData = new FormData(); // Use "FormData" with a capital "D"
+                formData.append("name", values.name);
+                formData.append("email", values.email);
+                formData.append("phone", values.phone);
+                formData.append("candType", values.candType);
+                formData.append("expYear", values.expYear);
+                formData.append("expMonth", values.expMonth);
+                formData.append("skills", values.skills);
+
+                // Append the resume file to the FormData object
+                formData.append("resumeFile", values.resume);
+
                 const emailParams = {
                     to_name: 'Shubham', // Replace with the recipient's name
                     from_name: 'NeoSao Services Pvt. Ltd.', // Replace with your company name
@@ -106,11 +118,7 @@ function ModalCareer() {
                 // Attach the resume file to the email
                 const resumeFile = values.resume;
                 if (resumeFile) {
-                    emailParams.resume = {
-                        name: resumeFile.name,
-                        type: resumeFile.type,
-                        data: resumeFile,
-                    };
+                    emailParams.resume = resumeFile;
                 }
 
                 // Replace 'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', and 'YOUR_USER_ID' with your actual values
@@ -142,6 +150,7 @@ function ModalCareer() {
 
 
 
+
         // GPT_END
     });
 
@@ -170,7 +179,7 @@ function ModalCareer() {
                     </Modal.Header>
 
                     <Modal.Body>
-                        <form id="sendJobform" onSubmit={formik.handleSubmit}>
+                        <form id="sendJobform" onSubmit={formik.handleSubmit} enctype="multipart/form-data">
                             <div className="form-group">
                                 <input
                                     type="text"
