@@ -4,6 +4,11 @@ import Modal from 'react-bootstrap/Modal';
 import '../assets/style/modalcareer.css';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
+import emailjs from 'emailjs-com';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'; // Import the CSS for styling
+
+
 
 function ModalCareer() {
     const [show, setShow] = useState(false);
@@ -77,14 +82,61 @@ function ModalCareer() {
             expMonth: '',
         },
         validationSchema,
-        onSubmit: (values, { resetForm }) => {
-            // Handle form submission here
-            console.log(values);
-            handleClose();
+        //   GPT
 
-            // Reset the form after successful submission
-            resetForm();
+        onSubmit: async (values, { resetForm }) => {
+            try {
+                // Send the email using emailjs
+                const emailParams = {
+                    to_name: 'Shubham', // Replace with the recipient's name
+                    from_name: 'NeoSao Services Pvt. Ltd.', // Replace with your company name
+                    formData: {
+                        name: values.name,
+                        email: values.email,
+                        phone: values.phone,
+                        candType: values.candType,
+                        expYear: values.expYear,
+                        expMonth: values.expMonth,
+                        skills: values.skills,
+                    },
+                };
+
+                // Attach the resume file to the email
+                const resumeFile = values.resume;
+                if (resumeFile) {
+                    emailParams.resume = resumeFile;
+                }
+
+                // Replace 'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', and 'YOUR_USER_ID' with your actual values
+                await emailjs.send('service_0k7o6xi', 'template_wo6ek1k', emailParams, 'W0XpjwDO-srhytALL');
+
+                // TOAST_SUCCESS
+                // Show a success toast notification
+                toast.success('Email sent successfully', {
+                    position: "top-right",
+                    autoClose: 3000,
+                });
+                // TOAST_END
+
+                // Handle form submission here (e.g., show success message)
+                console.log('Email sent successfully');
+                handleClose();
+
+                // Reset the form after successful submission
+                resetForm();
+            } catch (error) {
+                // Show an error toast notification if the email sending fails
+                toast.error('Email sending error', {
+                    position: "top-right",
+                    autoClose: 3000,
+                });
+                console.error('Email sending error:', error);
+            }
         },
+
+
+
+        // GPT_END
     });
 
     const handleInputChange = (fieldName, inputValue) => {
