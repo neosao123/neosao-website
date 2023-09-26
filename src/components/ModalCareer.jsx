@@ -111,7 +111,8 @@ function ModalCareer() {
                 if (resumeFile) {
                     emailParams.resume = resumeFile;
                 }
-
+                
+                console.log("Resume File :", emailParams)
                 // Replace 'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', and 'YOUR_USER_ID' with your actual values
                 await emailjs.send('service_0k7o6xi', 'template_wo6ek1k', emailParams, 'W0XpjwDO-srhytALL');
 
@@ -132,7 +133,7 @@ function ModalCareer() {
 
                 // Reset the form after successful submission
                 resetForm();
-                
+
             } catch (error) {
                 // Show an error toast notification if the email sending fails
                 toast.error('Email sending error', {
