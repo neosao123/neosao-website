@@ -12,9 +12,9 @@ import 'react-toastify/dist/ReactToastify.css'; // Import the CSS for styling
 
 function ModalCareer() {
     const [show, setShow] = useState(false);
-
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+
 
     const validationSchema = Yup.object().shape({
         name: Yup.string()
@@ -84,24 +84,14 @@ function ModalCareer() {
         },
 
         validationSchema,
+
         //   GPT
 
         onSubmit: async (values, { resetForm }) => {
             try {
                 // Send the email using emailjs
-                let formData = new FormData(); // Use "FormData" with a capital "D"
-                formData.append("name", values.name);
-                formData.append("email", values.email);
-                formData.append("phone", values.phone);
-                formData.append("candType", values.candType);
-                formData.append("expYear", values.expYear);
-                formData.append("expMonth", values.expMonth);
-                formData.append("skills", values.skills);
-
-                // Append the resume file to the FormData object
-                formData.append("resumeFile", values.resume);
-
                 const emailParams = {
+                    // Define your email template variables here
                     to_name: 'Shubham', // Replace with the recipient's name
                     from_name: 'NeoSao Services Pvt. Ltd.', // Replace with your company name
                     formData: {
@@ -115,6 +105,7 @@ function ModalCareer() {
                     },
                 };
 
+
                 // Attach the resume file to the email
                 const resumeFile = values.resume;
                 if (resumeFile) {
@@ -124,8 +115,11 @@ function ModalCareer() {
                 // Replace 'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', and 'YOUR_USER_ID' with your actual values
                 await emailjs.send('service_0k7o6xi', 'template_wo6ek1k', emailParams, 'W0XpjwDO-srhytALL');
 
+                
                 // TOAST_SUCCESS
+                
                 // Show a success toast notification
+                
                 toast.success('Email sent successfully', {
                     position: "top-right",
                     autoClose: 3000,
@@ -138,6 +132,7 @@ function ModalCareer() {
 
                 // Reset the form after successful submission
                 resetForm();
+                
             } catch (error) {
                 // Show an error toast notification if the email sending fails
                 toast.error('Email sending error', {
