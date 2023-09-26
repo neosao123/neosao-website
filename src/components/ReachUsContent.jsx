@@ -11,9 +11,6 @@ import { Link } from 'react-router-dom';
 import InnerHeader from '../components/InnerHeader';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
-import emailjs from 'emailjs-com';
-import { toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css'; // Import the styles
 
 
 
@@ -38,35 +35,7 @@ const ReachUsContent = () => {
   });
 
   // Form submission function
-  const handleSubmit = async (values, { resetForm }) => {
-    try {
-      // Send email using emailjs
-      await emailjs.send('service_0k7o6xi', 'template_zqaomvy', {
-        name: values.name,
-        email: values.email,
-        phone: values.phone,
-        subject: values.subject,
-        requestDetails: values.requestDetails,
-      }, 'W0XpjwDO-srhytALL');
-
-      // Show success toast
-      toast.success('Email sent successfully', {
-        position: 'top-right',
-        autoClose: 3000, // Close the toast after 3 seconds (adjust as needed)
-      });
-
-      // Reset the form after submission
-      resetForm();
-    } catch (error) {
-      // Show error toast
-      toast.error('Email send failed', {
-        position: 'top-right',
-        autoClose: 3000, // Close the toast after 3 seconds (adjust as needed)
-      });
-
-      console.error('Email send failed:', error);
-    }
-  };
+  
   return (
     <>
       <InnerHeader />
@@ -180,7 +149,7 @@ const ReachUsContent = () => {
                     requestDetails: '',
                   }}
                   validationSchema={validationSchema}
-                  onSubmit={handleSubmit}
+                  
                 >
                   <Form id="sendform">
                     <div className="form-group">
