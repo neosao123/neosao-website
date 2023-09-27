@@ -157,7 +157,7 @@ const Portfolio = () => {
                                         </div>
 
                                         <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '0.1s' }}>
-                                            <a href="">
+                                            <a href="#">
                                                 <div className="gallery-img">
                                                     <div className="img-gallery screen">
                                                         <img src={screen17} className="img-responsive" alt="Selvesingh" />
