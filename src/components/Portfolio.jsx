@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import '../assets/style/portfolio.css'
 import '../assets/style/Responsiveness.css'
-import {Link} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import rocket from '../assets/images/rocket.png'
 import star1 from '../assets/images/star-1.png'
 import star2 from '../assets/images/star-2.png'
@@ -47,7 +47,7 @@ import parra from '../assets/images/parra-icn.png'
 // import dp2 from '../assets/images/dp-2.jpg'
 // import lp11 from '../assets/images/lp-11.jpg'
 // import noImage from '../assets/images/no-ad.jpg'
-import { FaPhone,FaEnvelope,FaMap } from "react-icons/fa";
+import { FaPhone, FaEnvelope, FaMap } from "react-icons/fa";
 // import Header from './Header'
 // In your 'Portfolio' page component
 import InnerHeader from '../components/InnerHeader'
@@ -77,13 +77,13 @@ const Portfolio = () => {
 
 
     return (
-        
+
 
         <>
 
-        <InnerHeader />
-        
-          <div className="inner-header" id='portfolio-main' >
+            <InnerHeader />
+
+            <div className="inner-header" id='portfolio-main' >
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12 col-sm-12 col-xs-12">
@@ -156,739 +156,749 @@ const Portfolio = () => {
                                             </div>
                                         </div>
 
-                                        <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '0.1s' }}>
-                                            <a href="#">
-                                                <div className="gallery-img">
-                                                    <div className="img-gallery screen">
-                                                        <img src={screen17} className="img-responsive" alt="Selvesingh" />
-                                                    </div>
-                                                    <div className="galler-text">
-                                                        <h5>Selvesingh</h5>
-                                                        <h6>India</h6>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
 
-                                        <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '0.1s' }}>
-                                            <a href="">
-                                                <div className="gallery-img">
-                                                    <div className="img-gallery screen">
-                                                        <img src={webtemp} className="img-responsive" alt="Dr. Kshama Kulhalli" />
-                                                    </div>
-                                                    <div className="galler-text">
-                                                        <h5>Dr. Kshama Kulhalli</h5>
-                                                        <h6>India</h6>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
 
-                                        <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '0.1s' }}>
-                                            <a href="">
-                                                <div className="gallery-img">
-                                                    <div className="img-gallery screen">
-                                                        <img src={webtemp} className="img-responsive" alt="Morya Enterprises" />
+                                        <>
+                                        
+                                            <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '0.1s' }}>
+                                                <a href="#">
+                                                    <div className="gallery-img">
+                                                        <div className="img-gallery screen">
+                                                            <img src={screen17} className="img-responsive" alt="Selvesingh" />
+                                                        </div>
+                                                        <div className="galler-text">
+                                                            <h5>Selvesingh</h5>
+                                                            <h6>India</h6>
+                                                        </div>
                                                     </div>
-                                                    <div className="galler-text">
-                                                        <h5>Morya Enterprises</h5>
-                                                        <h6>India</h6>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
+                                                </a>
+                                            </div>
 
-                                        <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '0.1s' }}>
-                                            <a href="">
-                                                <div className="gallery-img">
-                                                    <div className="img-gallery screen">
-                                                        <img src={screen18} className="img-responsive" alt="Deendari" />
+                                            <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '0.1s' }}>
+                                                <a href="">
+                                                    <div className="gallery-img">
+                                                        <div className="img-gallery screen">
+                                                            <img src={webtemp} className="img-responsive" alt="Dr. Kshama Kulhalli" />
+                                                        </div>
+                                                        <div className="galler-text">
+                                                            <h5>Dr. Kshama Kulhalli</h5>
+                                                            <h6>India</h6>
+                                                        </div>
                                                     </div>
-                                                    <div className="galler-text">
-                                                        <h5>Deendari</h5>
-                                                        <h6>India</h6>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
+                                                </a>
+                                            </div>
 
-                                        <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '0.1s' }}>
-                                            <a href="">
-                                                <div className="gallery-img">
-                                                    <div className="img-gallery screen">
-                                                        <img src={screen20} className="img-responsive" alt="Cricstream Predict" />
+                                            <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '0.1s' }}>
+                                                <a href="">
+                                                    <div className="gallery-img">
+                                                        <div className="img-gallery screen">
+                                                            <img src={webtemp} className="img-responsive" alt="Morya Enterprises" />
+                                                        </div>
+                                                        <div className="galler-text">
+                                                            <h5>Morya Enterprises</h5>
+                                                            <h6>India</h6>
+                                                        </div>
                                                     </div>
-                                                    <div className="galler-text">
-                                                        <h5>Cricstream Predict</h5>
-                                                        <h6>India</h6>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
+                                                </a>
+                                            </div>
 
-                                        <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '0.1s' }}>
-                                            <a href="">
-                                                <div className="gallery-img">
-                                                    <div className="img-gallery screen">
-                                                        <img src={screen21} className="img-responsive" alt="The Mankind" />
+                                            <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '0.1s' }}>
+                                                <a href="">
+                                                    <div className="gallery-img">
+                                                        <div className="img-gallery screen">
+                                                            <img src={screen18} className="img-responsive" alt="Deendari" />
+                                                        </div>
+                                                        <div className="galler-text">
+                                                            <h5>Deendari</h5>
+                                                            <h6>India</h6>
+                                                        </div>
                                                     </div>
-                                                    <div className="galler-text">
-                                                        <h5>The Mankind</h5>
-                                                        <h6>India</h6>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
+                                                </a>
+                                            </div>
 
-                                        <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '0.1s' }}>
-                                            <a href="">
-                                                <div className="gallery-img">
-                                                    <div className="img-gallery screen">
-                                                        <img src={screen19} className="img-responsive" alt="osa enviro" />
+                                            <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '0.1s' }}>
+                                                <a href="">
+                                                    <div className="gallery-img">
+                                                        <div className="img-gallery screen">
+                                                            <img src={screen20} className="img-responsive" alt="Cricstream Predict" />
+                                                        </div>
+                                                        <div className="galler-text">
+                                                            <h5>Cricstream Predict</h5>
+                                                            <h6>India</h6>
+                                                        </div>
                                                     </div>
-                                                    <div className="galler-text">
-                                                        <h5>osa enviro</h5>
-                                                        <h6>India</h6>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
+                                                </a>
+                                            </div>
 
-                                        <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '0.1s' }}>
-                                            <a href="">
-                                                <div className="gallery-img">
-                                                    <div className="img-gallery screen">
-                                                        <img src={screen1} className="img-responsive" alt="Deltron" />
+                                            <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '0.1s' }}>
+                                                <a href="">
+                                                    <div className="gallery-img">
+                                                        <div className="img-gallery screen">
+                                                            <img src={screen21} className="img-responsive" alt="The Mankind" />
+                                                        </div>
+                                                        <div className="galler-text">
+                                                            <h5>The Mankind</h5>
+                                                            <h6>India</h6>
+                                                        </div>
                                                     </div>
-                                                    <div className="galler-text">
-                                                        <h5>Deltron</h5>
-                                                        <h6>India</h6>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
+                                                </a>
+                                            </div>
 
-                                        <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '7s' }}>
-                                            <a href="">
-                                                <div className="gallery-img">
-                                                    <div className="img-gallery screen">
-                                                        <img src={webtemp} className="img-responsive" alt="Locals hub" />
+                                            <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '0.1s' }}>
+                                                <a href="">
+                                                    <div className="gallery-img">
+                                                        <div className="img-gallery screen">
+                                                            <img src={screen19} className="img-responsive" alt="osa enviro" />
+                                                        </div>
+                                                        <div className="galler-text">
+                                                            <h5>osa enviro</h5>
+                                                            <h6>India</h6>
+                                                        </div>
                                                     </div>
-                                                    <div className="galler-text">
-                                                        <h5>Locals hub</h5>
-                                                        <h6>UAE</h6>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
+                                                </a>
+                                            </div>
 
-                                        <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '7s' }}>
-                                            <a href="">
-                                                <div className="gallery-img">
-                                                    <div className="img-gallery screen">
-                                                        <img src={webtemp} className="img-responsive" alt="eGstGovt" />
+                                            <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '0.1s' }}>
+                                                <a href="">
+                                                    <div className="gallery-img">
+                                                        <div className="img-gallery screen">
+                                                            <img src={screen1} className="img-responsive" alt="Deltron" />
+                                                        </div>
+                                                        <div className="galler-text">
+                                                            <h5>Deltron</h5>
+                                                            <h6>India</h6>
+                                                        </div>
                                                     </div>
-                                                    <div className="galler-text">
-                                                        <h5>eGstGovt</h5>
-                                                        <h6>India</h6>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
+                                                </a>
+                                            </div>
 
-                                        <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '0.1s' }}>
-                                            <a href="">
-                                                <div className="gallery-img">
-                                                    <div className="img-gallery screen">
-                                                        <img src={screen2} className="img-responsive" alt="Tour Booking" />
+                                            <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '7s' }}>
+                                                <a href="">
+                                                    <div className="gallery-img">
+                                                        <div className="img-gallery screen">
+                                                            <img src={webtemp} className="img-responsive" alt="Locals hub" />
+                                                        </div>
+                                                        <div className="galler-text">
+                                                            <h5>Locals hub</h5>
+                                                            <h6>UAE</h6>
+                                                        </div>
                                                     </div>
-                                                    <div className="galler-text">
-                                                        <h5>Tour Booking</h5>
-                                                        <h6>Malaysia</h6>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
+                                                </a>
+                                            </div>
 
-                                        <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '0.2s' }}>
-                                            <a href="">
-                                                <div className="gallery-img">
-                                                    <div className="img-gallery screen">
-                                                        <img src={screen3} className="img-responsive" alt="BMintel" />
+                                            <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '7s' }}>
+                                                <a href="">
+                                                    <div className="gallery-img">
+                                                        <div className="img-gallery screen">
+                                                            <img src={webtemp} className="img-responsive" alt="eGstGovt" />
+                                                        </div>
+                                                        <div className="galler-text">
+                                                            <h5>eGstGovt</h5>
+                                                            <h6>India</h6>
+                                                        </div>
                                                     </div>
-                                                    <div className="galler-text">
-                                                        <h5>BMintel</h5>
-                                                        <h6>India</h6>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
+                                                </a>
+                                            </div>
 
-                                        <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '0.3s' }}>
-                                            <a href="">
-                                                <div className="gallery-img">
-                                                    <div className="img-gallery screen">
-                                                        <img src={screen4} className="img-responsive" alt="Anos" />
+                                            <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '0.1s' }}>
+                                                <a href="">
+                                                    <div className="gallery-img">
+                                                        <div className="img-gallery screen">
+                                                            <img src={screen2} className="img-responsive" alt="Tour Booking" />
+                                                        </div>
+                                                        <div className="galler-text">
+                                                            <h5>Tour Booking</h5>
+                                                            <h6>Malaysia</h6>
+                                                        </div>
                                                     </div>
-                                                    <div className="galler-text">
-                                                        <h5>Anos</h5>
-                                                        <h6>India</h6>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
+                                                </a>
+                                            </div>
 
-                                        <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '0.4s' }}>
-                                            <a href="">
-                                                <div className="gallery-img">
-                                                    <div className="img-gallery screen">
-                                                        <img src={screen5} className="img-responsive" alt="Tandoor" />
+                                            <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '0.2s' }}>
+                                                <a href="">
+                                                    <div className="gallery-img">
+                                                        <div className="img-gallery screen">
+                                                            <img src={screen3} className="img-responsive" alt="BMintel" />
+                                                        </div>
+                                                        <div className="galler-text">
+                                                            <h5>BMintel</h5>
+                                                            <h6>India</h6>
+                                                        </div>
                                                     </div>
-                                                    <div className="galler-text">
-                                                        <h5>Tandoor</h5>
-                                                        <h6>India</h6>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
+                                                </a>
+                                            </div>
 
-                                        <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '1s' }}>
-                                            <a href="">
-                                                <div className="gallery-img">
-                                                    <div className="img-gallery screen">
-                                                        <img src={screen6} className="img-responsive" alt="Catlee" />
+                                            <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '0.3s' }}>
+                                                <a href="">
+                                                    <div className="gallery-img">
+                                                        <div className="img-gallery screen">
+                                                            <img src={screen4} className="img-responsive" alt="Anos" />
+                                                        </div>
+                                                        <div className="galler-text">
+                                                            <h5>Anos</h5>
+                                                            <h6>India</h6>
+                                                        </div>
                                                     </div>
-                                                    <div className="galler-text">
-                                                        <h5>Catlee</h5>
-                                                        <h6>India</h6>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
+                                                </a>
+                                            </div>
 
-                                        <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '2s' }}>
-                                            <a href="">
-                                                <div className="gallery-img">
-                                                    <div className="img-gallery screen">
-                                                        <img src={screen7} className="img-responsive" alt="True Date" />
+                                            <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '0.4s' }}>
+                                                <a href="">
+                                                    <div className="gallery-img">
+                                                        <div className="img-gallery screen">
+                                                            <img src={screen5} className="img-responsive" alt="Tandoor" />
+                                                        </div>
+                                                        <div className="galler-text">
+                                                            <h5>Tandoor</h5>
+                                                            <h6>India</h6>
+                                                        </div>
                                                     </div>
-                                                    <div className="galler-text">
-                                                        <h5>True Date</h5>
-                                                        <h6>India</h6>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
+                                                </a>
+                                            </div>
 
-                                        <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '3s' }}>
-                                            <a href="">
-                                                <div className="gallery-img">
-                                                    <div className="img-gallery screen">
-                                                        <img src={screen8} className="img-responsive" alt="Myvegiz" />
+                                            <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '1s' }}>
+                                                <a href="">
+                                                    <div className="gallery-img">
+                                                        <div className="img-gallery screen">
+                                                            <img src={screen6} className="img-responsive" alt="Catlee" />
+                                                        </div>
+                                                        <div className="galler-text">
+                                                            <h5>Catlee</h5>
+                                                            <h6>India</h6>
+                                                        </div>
                                                     </div>
-                                                    <div className="galler-text">
-                                                        <h5>Myvegiz</h5>
-                                                        <h6>India</h6>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
+                                                </a>
+                                            </div>
 
-                                        <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '4s' }}>
-                                            <a href="">
-                                                <div className="gallery-img">
-                                                    <div className="img-gallery screen">
-                                                        <img src={screen9} className="img-responsive" alt="Dehaati" />
+                                            <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '2s' }}>
+                                                <a href="">
+                                                    <div className="gallery-img">
+                                                        <div className="img-gallery screen">
+                                                            <img src={screen7} className="img-responsive" alt="True Date" />
+                                                        </div>
+                                                        <div className="galler-text">
+                                                            <h5>True Date</h5>
+                                                            <h6>India</h6>
+                                                        </div>
                                                     </div>
-                                                    <div className="galler-text">
-                                                        <h5>Dehaati</h5>
-                                                        <h6>India</h6>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
+                                                </a>
+                                            </div>
 
-                                        <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '5s' }}>
-                                            <a href="">
-                                                <div className="gallery-img">
-                                                    <div className="img-gallery screen">
-                                                        <img src={screen10} className="img-responsive" alt="Dum Rice n More" />
+                                            <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '3s' }}>
+                                                <a href="">
+                                                    <div className="gallery-img">
+                                                        <div className="img-gallery screen">
+                                                            <img src={screen8} className="img-responsive" alt="Myvegiz" />
+                                                        </div>
+                                                        <div className="galler-text">
+                                                            <h5>Myvegiz</h5>
+                                                            <h6>India</h6>
+                                                        </div>
                                                     </div>
-                                                    <div className="galler-text">
-                                                        <h5>Dum Rice n More</h5>
-                                                        <h6>India</h6>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
+                                                </a>
+                                            </div>
 
-                                        <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '6s' }}>
-                                            <a href="">
-                                                <div className="gallery-img">
-                                                    <div className="img-gallery screen">
-                                                        <img src={screen11} className="img-responsive" alt="AB Hotels" />
+                                            <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '4s' }}>
+                                                <a href="">
+                                                    <div className="gallery-img">
+                                                        <div className="img-gallery screen">
+                                                            <img src={screen9} className="img-responsive" alt="Dehaati" />
+                                                        </div>
+                                                        <div className="galler-text">
+                                                            <h5>Dehaati</h5>
+                                                            <h6>India</h6>
+                                                        </div>
                                                     </div>
-                                                    <div className="galler-text">
-                                                        <h5>AB Hotels</h5>
-                                                        <h6>India</h6>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
+                                                </a>
+                                            </div>
 
-                                        <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '7s' }}>
-                                            <a href="">
-                                                <div className="gallery-img">
-                                                    <div className="img-gallery screen">
-                                                        <img src={screen12} className="img-responsive" alt="Rolls Rice" />
+                                            <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '5s' }}>
+                                                <a href="">
+                                                    <div className="gallery-img">
+                                                        <div className="img-gallery screen">
+                                                            <img src={screen10} className="img-responsive" alt="Dum Rice n More" />
+                                                        </div>
+                                                        <div className="galler-text">
+                                                            <h5>Dum Rice n More</h5>
+                                                            <h6>India</h6>
+                                                        </div>
                                                     </div>
-                                                    <div className="galler-text">
-                                                        <h5>Rolls Rice</h5>
-                                                        <h6>India</h6>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
+                                                </a>
+                                            </div>
 
-                                        <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '8.3s' }}>
-                                            <a href="">
-                                                <div className="gallery-img">
-                                                    <div className="img-gallery screen">
-                                                        <img src={dp1} className="img-responsive" alt="Vouchershop" />
+                                            <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '6s' }}>
+                                                <a href="">
+                                                    <div className="gallery-img">
+                                                        <div className="img-gallery screen">
+                                                            <img src={screen11} className="img-responsive" alt="AB Hotels" />
+                                                        </div>
+                                                        <div className="galler-text">
+                                                            <h5>AB Hotels</h5>
+                                                            <h6>India</h6>
+                                                        </div>
                                                     </div>
-                                                    <div className="galler-text">
-                                                        <h5>Vouchershop</h5>
-                                                        <h6>Australia</h6>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
+                                                </a>
+                                            </div>
 
-                                        <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '8s' }}>
-                                            <a href="">
-                                                <div className="gallery-img">
-                                                    <div className="img-gallery screen">
-                                                        <img src={screen13} className="img-responsive" alt="Origin Masala" />
+                                            <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '7s' }}>
+                                                <a href="">
+                                                    <div className="gallery-img">
+                                                        <div className="img-gallery screen">
+                                                            <img src={screen12} className="img-responsive" alt="Rolls Rice" />
+                                                        </div>
+                                                        <div className="galler-text">
+                                                            <h5>Rolls Rice</h5>
+                                                            <h6>India</h6>
+                                                        </div>
                                                     </div>
-                                                    <div className="galler-text">
-                                                        <h5>Origin Masala</h5>
-                                                        <h6>India</h6>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
+                                                </a>
+                                            </div>
 
-                                        <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '8.1s' }}>
-                                            <a href="">
-                                                <div className="gallery-img screen">
-                                                    <div className="img-gallery">
-                                                        <img src={screen14} className="img-responsive" alt="Virtnexuus" />
+                                            <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '8.3s' }}>
+                                                <a href="">
+                                                    <div className="gallery-img">
+                                                        <div className="img-gallery screen">
+                                                            <img src={dp1} className="img-responsive" alt="Vouchershop" />
+                                                        </div>
+                                                        <div className="galler-text">
+                                                            <h5>Vouchershop</h5>
+                                                            <h6>Australia</h6>
+                                                        </div>
                                                     </div>
-                                                    <div className="galler-text">
-                                                        <h5>Virtnexuus</h5>
-                                                        <h6>India</h6>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
+                                                </a>
+                                            </div>
 
-                                        <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '8.2s' }}>
-                                            <a href="">
-                                                <div className="gallery-img">
-                                                    <div className="img-gallery">
-                                                        <img src={webtemp} className="img-responsive" alt="Charcoal Chicken Randwick" />
+                                            <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '8s' }}>
+                                                <a href="">
+                                                    <div className="gallery-img">
+                                                        <div className="img-gallery screen">
+                                                            <img src={screen13} className="img-responsive" alt="Origin Masala" />
+                                                        </div>
+                                                        <div className="galler-text">
+                                                            <h5>Origin Masala</h5>
+                                                            <h6>India</h6>
+                                                        </div>
                                                     </div>
-                                                    <div className="galler-text">
-                                                        <h5>Charcoal Chicken Randwick</h5>
-                                                        <h6>Australia</h6>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
+                                                </a>
+                                            </div>
 
-                                        <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '8.2s' }}>
-                                            <a href="">
-                                                <div className="gallery-img screen">
-                                                    <div className="img-gallery">
-                                                        <img src={webtemp} className="img-responsive" alt="1nation" />
+                                            <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '8.1s' }}>
+                                                <a href="">
+                                                    <div className="gallery-img screen">
+                                                        <div className="img-gallery">
+                                                            <img src={screen14} className="img-responsive" alt="Virtnexuus" />
+                                                        </div>
+                                                        <div className="galler-text">
+                                                            <h5>Virtnexuus</h5>
+                                                            <h6>India</h6>
+                                                        </div>
                                                     </div>
-                                                    <div className="galler-text">
-                                                        <h5>1nation</h5>
-                                                        <h6>India</h6>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
+                                                </a>
+                                            </div>
 
-                                        <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter dev" style={{ transition: '8.3s' }}>
-                                            <a href="">
-                                                <div className="gallery-img">
-                                                    <div className="img-gallery">
-                                                        <img src={dp1} className="img-responsive" alt="Vouchershop" />
+                                            <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '8.2s' }}>
+                                                <a href="">
+                                                    <div className="gallery-img">
+                                                        <div className="img-gallery">
+                                                            <img src={webtemp} className="img-responsive" alt="Charcoal Chicken Randwick" />
+                                                        </div>
+                                                        <div className="galler-text">
+                                                            <h5>Charcoal Chicken Randwick</h5>
+                                                            <h6>Australia</h6>
+                                                        </div>
                                                     </div>
-                                                    <div className="galler-text">
-                                                        <h5>Vouchershop</h5>
-                                                        <h6>Australia</h6>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
+                                                </a>
+                                            </div>
 
-                                        <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter dev app" style={{ transition: '1s' }}>
-                                            <a href="">
-                                                <div className="gallery-img">
-                                                    <div className="img-gallery">
-                                                        <img src={screen6} className="img-responsive" alt="Catlee" />
+                                            <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '8.2s' }}>
+                                                <a href="">
+                                                    <div className="gallery-img screen">
+                                                        <div className="img-gallery">
+                                                            <img src={webtemp} className="img-responsive" alt="1nation" />
+                                                        </div>
+                                                        <div className="galler-text">
+                                                            <h5>1nation</h5>
+                                                            <h6>India</h6>
+                                                        </div>
                                                     </div>
-                                                    <div className="galler-text">
-                                                        <h5>Catlee</h5>
-                                                        <h6>India</h6>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
+                                                </a>
+                                            </div>
 
-                                        <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter app" style={{ transition: '0.3s' }}>
-                                            <a href="">
-                                                <div className="gallery-img">
-                                                    <div className="img-gallery">
-                                                        <img src={screen4} className="img-responsive" alt="Anos" />
+                                            <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter dev" style={{ transition: '8.3s' }}>
+                                                <a href="">
+                                                    <div className="gallery-img">
+                                                        <div className="img-gallery">
+                                                            <img src={dp1} className="img-responsive" alt="Vouchershop" />
+                                                        </div>
+                                                        <div className="galler-text">
+                                                            <h5>Vouchershop</h5>
+                                                            <h6>Australia</h6>
+                                                        </div>
                                                     </div>
-                                                    <div className="galler-text">
-                                                        <h5>Anos</h5>
-                                                        <h6>India</h6>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
+                                                </a>
+                                            </div>
 
-                                        <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter app" style={{ transition: '7s' }}>
-                                            <a href="">
-                                                <div className="gallery-img">
-                                                    <div className="img-gallery">
-                                                        <img src={webtemp} className="img-responsive" alt="Locals hub" />
+                                            <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter dev app" style={{ transition: '1s' }}>
+                                                <a href="">
+                                                    <div className="gallery-img">
+                                                        <div className="img-gallery">
+                                                            <img src={screen6} className="img-responsive" alt="Catlee" />
+                                                        </div>
+                                                        <div className="galler-text">
+                                                            <h5>Catlee</h5>
+                                                            <h6>India</h6>
+                                                        </div>
                                                     </div>
-                                                    <div className="galler-text">
-                                                        <h5>Locals hub</h5>
-                                                        <h6>UAE</h6>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
+                                                </a>
+                                            </div>
 
-                                        <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter dev app" style={{ transition: '3s' }}>
-                                            <a href="">
-                                                <div className="gallery-img">
-                                                    <div className="img-gallery">
-                                                        <img src={screen8} className="img-responsive" alt="Myvegiz" />
+                                            <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter app" style={{ transition: '0.3s' }}>
+                                                <a href="">
+                                                    <div className="gallery-img">
+                                                        <div className="img-gallery">
+                                                            <img src={screen4} className="img-responsive" alt="Anos" />
+                                                        </div>
+                                                        <div className="galler-text">
+                                                            <h5>Anos</h5>
+                                                            <h6>India</h6>
+                                                        </div>
                                                     </div>
-                                                    <div className="galler-text">
-                                                        <h5>Myvegiz</h5>
-                                                        <h6>India</h6>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
+                                                </a>
+                                            </div>
 
-                                        <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter dev" style={{ transition: '8s' }}>
-                                            <a href="">
-                                                <div className="gallery-img">
-                                                    <div className="img-gallery">
-                                                        <img src={screen13} className="img-responsive" alt="Origin Masala" />
+                                            <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter app" style={{ transition: '7s' }}>
+                                                <a href="">
+                                                    <div className="gallery-img">
+                                                        <div className="img-gallery">
+                                                            <img src={webtemp} className="img-responsive" alt="Locals hub" />
+                                                        </div>
+                                                        <div className="galler-text">
+                                                            <h5>Locals hub</h5>
+                                                            <h6>UAE</h6>
+                                                        </div>
                                                     </div>
-                                                    <div className="galler-text">
-                                                        <h5>Origin Masala</h5>
-                                                        <h6>India</h6>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
+                                                </a>
+                                            </div>
 
-                                        <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter dev app" style={{ transition: '8.4s' }}>
-                                            <a href="">
-                                                <div className="gallery-img">
-                                                    <div className="img-gallery">
-                                                        <img src={dwp1} className="img-responsive" alt="Compito" />
+                                            <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter dev app" style={{ transition: '3s' }}>
+                                                <a href="">
+                                                    <div className="gallery-img">
+                                                        <div className="img-gallery">
+                                                            <img src={screen8} className="img-responsive" alt="Myvegiz" />
+                                                        </div>
+                                                        <div className="galler-text">
+                                                            <h5>Myvegiz</h5>
+                                                            <h6>India</h6>
+                                                        </div>
                                                     </div>
-                                                    <div className="galler-text">
-                                                        <h5>Compito</h5>
-                                                        <h6>UAE</h6>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
+                                                </a>
+                                            </div>
 
-                                        <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter dev app" style={{ transition: '9.1s' }}>
-                                            <a href="">
-                                                <div className="gallery-img">
-                                                    <div className="img-gallery">
-                                                        <img src={webtemp} className="img-responsive" alt="Courier & Logistics Managment" />
+                                            <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter dev" style={{ transition: '8s' }}>
+                                                <a href="">
+                                                    <div className="gallery-img">
+                                                        <div className="img-gallery">
+                                                            <img src={screen13} className="img-responsive" alt="Origin Masala" />
+                                                        </div>
+                                                        <div className="galler-text">
+                                                            <h5>Origin Masala</h5>
+                                                            <h6>India</h6>
+                                                        </div>
                                                     </div>
-                                                    <div className="galler-text">
-                                                        <h5>Courier & Logistics Managment</h5>
-                                                        <h6>India</h6>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
+                                                </a>
+                                            </div>
 
-                                        <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter dev" style={{ transition: '9.2s' }}>
-                                            <a href="">
-                                                <div className="gallery-img">
-                                                    <div className="img-gallery">
-                                                        <img src={webtemp} className="img-responsive" alt="Chartedbulls" />
+                                            <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter dev app" style={{ transition: '8.4s' }}>
+                                                <a href="">
+                                                    <div className="gallery-img">
+                                                        <div className="img-gallery">
+                                                            <img src={dwp1} className="img-responsive" alt="Compito" />
+                                                        </div>
+                                                        <div className="galler-text">
+                                                            <h5>Compito</h5>
+                                                            <h6>UAE</h6>
+                                                        </div>
                                                     </div>
-                                                    <div className="galler-text">
-                                                        <h5>Chartedbulls</h5>
-                                                        <h6>India</h6>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
+                                                </a>
+                                            </div>
 
-                                        <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter dev" style={{ transition: '8.2s' }}>
-                                            <a href="">
-                                                <div className="gallery-img">
-                                                    <div className="img-gallery">
-                                                        <img src={webtemp} className="img-responsive" alt="Charcoal Chicken Randwick" />
+                                            <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter dev app" style={{ transition: '9.1s' }}>
+                                                <a href="">
+                                                    <div className="gallery-img">
+                                                        <div className="img-gallery">
+                                                            <img src={webtemp} className="img-responsive" alt="Courier & Logistics Managment" />
+                                                        </div>
+                                                        <div className="galler-text">
+                                                            <h5>Courier & Logistics Managment</h5>
+                                                            <h6>India</h6>
+                                                        </div>
                                                     </div>
-                                                    <div className="galler-text">
-                                                        <h5>Charcoal Chicken Randwick</h5>
-                                                        <h6>Australia</h6>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
+                                                </a>
+                                            </div>
 
-                                        <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter dev" style={{ transition: '8.1s' }}>
-                                            <a href="">
-                                                <div className="gallery-img">
-                                                    <div className="img-gallery">
-                                                        <img src={screen14} className="img-responsive" alt="Virtnexuus" />
+                                            <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter dev" style={{ transition: '9.2s' }}>
+                                                <a href="">
+                                                    <div className="gallery-img">
+                                                        <div className="img-gallery">
+                                                            <img src={webtemp} className="img-responsive" alt="Chartedbulls" />
+                                                        </div>
+                                                        <div className="galler-text">
+                                                            <h5>Chartedbulls</h5>
+                                                            <h6>India</h6>
+                                                        </div>
                                                     </div>
-                                                    <div className="galler-text">
-                                                        <h5>Virtnexuus</h5>
-                                                        <h6>India</h6>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
+                                                </a>
+                                            </div>
 
-                                        <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter app" style={{ transition: '9.3s' }}>
-                                            <a href="">
-                                                <div className="gallery-img">
-                                                    <div className="img-gallery">
-                                                        <img src={ap12} className="img-responsive" alt="Janata Bazar" />
+                                            <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter dev" style={{ transition: '8.2s' }}>
+                                                <a href="">
+                                                    <div className="gallery-img">
+                                                        <div className="img-gallery">
+                                                            <img src={webtemp} className="img-responsive" alt="Charcoal Chicken Randwick" />
+                                                        </div>
+                                                        <div className="galler-text">
+                                                            <h5>Charcoal Chicken Randwick</h5>
+                                                            <h6>Australia</h6>
+                                                        </div>
                                                     </div>
-                                                    <div className="galler-text">
-                                                        <h5>Janata Bazar</h5>
-                                                        <h6>India</h6>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
+                                                </a>
+                                            </div>
 
-                                        <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter app" style={{ transition: '9.3s' }}>
-                                            <a href="">
-                                                <div className="gallery-img">
-                                                    <div className="img-gallery">
-                                                        <img src={webtemp} className="img-responsive" alt="Click2Courier" />
+                                            <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter dev" style={{ transition: '8.1s' }}>
+                                                <a href="">
+                                                    <div className="gallery-img">
+                                                        <div className="img-gallery">
+                                                            <img src={screen14} className="img-responsive" alt="Virtnexuus" />
+                                                        </div>
+                                                        <div className="galler-text">
+                                                            <h5>Virtnexuus</h5>
+                                                            <h6>India</h6>
+                                                        </div>
                                                     </div>
-                                                    <div className="galler-text">
-                                                        <h5>Click2Courier</h5>
-                                                        <h6>India</h6>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
+                                                </a>
+                                            </div>
 
-                                        <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter app" style={{ transition: '9.4s' }}>
-                                            <a href="">
-                                                <div className="gallery-img">
-                                                    <div className="img-gallery">
-                                                        <img src={ap9} className="img-responsive" alt="QTP" />
+                                            <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter app" style={{ transition: '9.3s' }}>
+                                                <a href="">
+                                                    <div className="gallery-img">
+                                                        <div className="img-gallery">
+                                                            <img src={ap12} className="img-responsive" alt="Janata Bazar" />
+                                                        </div>
+                                                        <div className="galler-text">
+                                                            <h5>Janata Bazar</h5>
+                                                            <h6>India</h6>
+                                                        </div>
                                                     </div>
-                                                    <div className="galler-text">
-                                                        <h5>QTP</h5>
-                                                        <h6>UAE</h6>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
+                                                </a>
+                                            </div>
 
-                                        <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter app" style={{ transition: '10.1s' }}>
-                                            <a href="">
-                                                <div className="gallery-img">
-                                                    <div className="img-gallery">
-                                                        <img src={ap11} className="img-responsive" alt="ANB News" />
+                                            <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter app" style={{ transition: '9.3s' }}>
+                                                <a href="">
+                                                    <div className="gallery-img">
+                                                        <div className="img-gallery">
+                                                            <img src={webtemp} className="img-responsive" alt="Click2Courier" />
+                                                        </div>
+                                                        <div className="galler-text">
+                                                            <h5>Click2Courier</h5>
+                                                            <h6>India</h6>
+                                                        </div>
                                                     </div>
-                                                    <div className="galler-text">
-                                                        <h5>ANB News</h5>
-                                                        <h6>India</h6>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
+                                                </a>
+                                            </div>
 
-                                        <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter app" style={{ transition: '8s' }}>
-                                            <a href="">
-                                                <div className="gallery-img">
-                                                    <div className="img-gallery">
-                                                        <img src={screen13} className="img-responsive" alt="Origin Masala" />
+                                            <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter app" style={{ transition: '9.4s' }}>
+                                                <a href="">
+                                                    <div className="gallery-img">
+                                                        <div className="img-gallery">
+                                                            <img src={ap9} className="img-responsive" alt="QTP" />
+                                                        </div>
+                                                        <div className="galler-text">
+                                                            <h5>QTP</h5>
+                                                            <h6>UAE</h6>
+                                                        </div>
                                                     </div>
-                                                    <div className="galler-text">
-                                                        <h5>Origin Masala</h5>
-                                                        <h6>India</h6>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
+                                                </a>
+                                            </div>
 
-                                        <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter app" style={{ transition: '2s' }}>
-                                            <a href="">
-                                                <div className="gallery-img">
-                                                    <div className="img-gallery">
-                                                        <img src={screen7} className="img-responsive" alt="True Date" />
+                                            <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter app" style={{ transition: '10.1s' }}>
+                                                <a href="">
+                                                    <div className="gallery-img">
+                                                        <div className="img-gallery">
+                                                            <img src={ap11} className="img-responsive" alt="ANB News" />
+                                                        </div>
+                                                        <div className="galler-text">
+                                                            <h5>ANB News</h5>
+                                                            <h6>India</h6>
+                                                        </div>
                                                     </div>
-                                                    <div className="galler-text">
-                                                        <h5>True Date</h5>
-                                                        <h6>India</h6>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
+                                                </a>
+                                            </div>
 
-                                        <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter app" style={{ transition: '0.1s' }}>
-                                            <a href="">
-                                                <div className="gallery-img">
-                                                    <div className="img-gallery">
-                                                        <img src={screen19} className="img-responsive" alt="osa enviro" />
+                                            <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter app" style={{ transition: '8s' }}>
+                                                <a href="">
+                                                    <div className="gallery-img">
+                                                        <div className="img-gallery">
+                                                            <img src={screen13} className="img-responsive" alt="Origin Masala" />
+                                                        </div>
+                                                        <div className="galler-text">
+                                                            <h5>Origin Masala</h5>
+                                                            <h6>India</h6>
+                                                        </div>
                                                     </div>
-                                                    <div className="galler-text">
-                                                        <h5>osa enviro</h5>
-                                                        <h6>India</h6>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
+                                                </a>
+                                            </div>
 
-                                        <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter logos" style={{ transition: '10.2s' }}>
-                                            <a href="">
-                                                <div className="gallery-img">
-                                                    <div className="img-gallery">
-                                                        <img src={lp8} className="img-responsive" alt="Neosao" />
+                                            <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter app" style={{ transition: '2s' }}>
+                                                <a href="">
+                                                    <div className="gallery-img">
+                                                        <div className="img-gallery">
+                                                            <img src={screen7} className="img-responsive" alt="True Date" />
+                                                        </div>
+                                                        <div className="galler-text">
+                                                            <h5>True Date</h5>
+                                                            <h6>India</h6>
+                                                        </div>
                                                     </div>
-                                                    <div className="galler-text">
-                                                        <h5>Neosao</h5>
-                                                        <h6>India</h6>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
+                                                </a>
+                                            </div>
 
-                                        <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter logos" style={{ transition: '10.3s' }}>
-                                            <a href="">
-                                                <div className="gallery-img">
-                                                    <div className="img-gallery">
-                                                        <img src={lp6} className="img-responsive" alt="Myvegiz" />
+                                            <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter app" style={{ transition: '0.1s' }}>
+                                                <a href="">
+                                                    <div className="gallery-img">
+                                                        <div className="img-gallery">
+                                                            <img src={screen19} className="img-responsive" alt="osa enviro" />
+                                                        </div>
+                                                        <div className="galler-text">
+                                                            <h5>osa enviro</h5>
+                                                            <h6>India</h6>
+                                                        </div>
                                                     </div>
-                                                    <div className="galler-text">
-                                                        <h5>Myvegiz</h5>
-                                                        <h6>India</h6>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
+                                                </a>
+                                            </div>
 
-                                        <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter logos" style={{ transition: '10.4s' }}>
-                                            <a href="">
-                                                <div className="gallery-img">
-                                                    <div className="img-gallery">
-                                                        <img src={webtemp} className="img-responsive" alt="Atomic Brain" />
+                                            <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter logos" style={{ transition: '10.2s' }}>
+                                                <a href="">
+                                                    <div className="gallery-img">
+                                                        <div className="img-gallery">
+                                                            <img src={lp8} className="img-responsive" alt="Neosao" />
+                                                        </div>
+                                                        <div className="galler-text">
+                                                            <h5>Neosao</h5>
+                                                            <h6>India</h6>
+                                                        </div>
                                                     </div>
-                                                    <div className="galler-text">
-                                                        <h5>Atomic Brain</h5>
-                                                        <h6>India</h6>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
+                                                </a>
+                                            </div>
 
-                                        <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter logos" style={{ transition: '11.1s' }}>
-                                            <a href="">
-                                                <div className="gallery-img">
-                                                    <div className="img-gallery">
-                                                        <img src={lp1} className="img-responsive" alt="Anos" />
+                                            <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter logos" style={{ transition: '10.3s' }}>
+                                                <a href="">
+                                                    <div className="gallery-img">
+                                                        <div className="img-gallery">
+                                                            <img src={lp6} className="img-responsive" alt="Myvegiz" />
+                                                        </div>
+                                                        <div className="galler-text">
+                                                            <h5>Myvegiz</h5>
+                                                            <h6>India</h6>
+                                                        </div>
                                                     </div>
-                                                    <div className="galler-text">
-                                                        <h5>Anos</h5>
-                                                        <h6>India</h6>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
+                                                </a>
+                                            </div>
 
-                                        <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter logos" style={{ transition: '11.2s' }}>
-                                            <a href="">
-                                                <div className="gallery-img">
-                                                    <div className="img-gallery">
-                                                        <img src={lp3} className="img-responsive" alt="ANB News" />
+                                            <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter logos" style={{ transition: '10.4s' }}>
+                                                <a href="">
+                                                    <div className="gallery-img">
+                                                        <div className="img-gallery">
+                                                            <img src={webtemp} className="img-responsive" alt="Atomic Brain" />
+                                                        </div>
+                                                        <div className="galler-text">
+                                                            <h5>Atomic Brain</h5>
+                                                            <h6>India</h6>
+                                                        </div>
                                                     </div>
-                                                    <div className="galler-text">
-                                                        <h5>ANB News</h5>
-                                                        <h6>India</h6>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
+                                                </a>
+                                            </div>
 
-                                        <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter logos" style={{ transition: '11.3s' }}>
-                                            <a href="">
-                                                <div className="gallery-img">
-                                                    <div className="img-gallery">
-                                                        <img src={lp4} className="img-responsive" alt="Catlee" />
+                                            <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter logos" style={{ transition: '11.1s' }}>
+                                                <a href="">
+                                                    <div className="gallery-img">
+                                                        <div className="img-gallery">
+                                                            <img src={lp1} className="img-responsive" alt="Anos" />
+                                                        </div>
+                                                        <div className="galler-text">
+                                                            <h5>Anos</h5>
+                                                            <h6>India</h6>
+                                                        </div>
                                                     </div>
-                                                    <div className="galler-text">
-                                                        <h5>Catlee</h5>
-                                                        <h6>India</h6>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
+                                                </a>
+                                            </div>
 
-                                        <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter logos" style={{ transition: '11.4s' }}>
-                                            <a href="">
-                                                <div className="gallery-img">
-                                                    <div className="img-gallery">
-                                                        <img src={lp10} className="img-responsive" alt="True Dates" />
+                                            <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter logos" style={{ transition: '11.2s' }}>
+                                                <a href="">
+                                                    <div className="gallery-img">
+                                                        <div className="img-gallery">
+                                                            <img src={lp3} className="img-responsive" alt="ANB News" />
+                                                        </div>
+                                                        <div className="galler-text">
+                                                            <h5>ANB News</h5>
+                                                            <h6>India</h6>
+                                                        </div>
                                                     </div>
-                                                    <div className="galler-text">
-                                                        <h5>True Dates</h5>
-                                                        <h6>India</h6>
-                                                    </div>
-                                                </div>
-                                            </a>
-                                        </div>
+                                                </a>
+                                            </div>
 
-                                        <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter logos" style={{ transition: '11.4s' }}>
-                                            <a href="">
-                                                <div className="gallery-img">
-                                                    <div className="img-gallery">
-                                                        <img src={webtemp} className="img-responsive" alt="Deendari" />
+                                            <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter logos" style={{ transition: '11.3s' }}>
+                                                <a href="">
+                                                    <div className="gallery-img">
+                                                        <div className="img-gallery">
+                                                            <img src={lp4} className="img-responsive" alt="Catlee" />
+                                                        </div>
+                                                        <div className="galler-text">
+                                                            <h5>Catlee</h5>
+                                                            <h6>India</h6>
+                                                        </div>
                                                     </div>
-                                                    <div className="galler-text">
-                                                        <h5>Deendari</h5>
-                                                        <h6>India</h6>
+                                                </a>
+                                            </div>
+
+                                            <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter logos" style={{ transition: '11.4s' }}>
+                                                <a href="">
+                                                    <div className="gallery-img">
+                                                        <div className="img-gallery">
+                                                            <img src={lp10} className="img-responsive" alt="True Dates" />
+                                                        </div>
+                                                        <div className="galler-text">
+                                                            <h5>True Dates</h5>
+                                                            <h6>India</h6>
+                                                        </div>
                                                     </div>
-                                                </div>
-                                            </a>
-                                        </div>
+                                                </a>
+                                            </div>
+
+                                            <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter logos" style={{ transition: '11.4s' }}>
+                                                <a href="">
+                                                    <div className="gallery-img">
+                                                        <div className="img-gallery">
+                                                            <img src={webtemp} className="img-responsive" alt="Deendari" />
+                                                        </div>
+                                                        <div className="galler-text">
+                                                            <h5>Deendari</h5>
+                                                            <h6>India</h6>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </>
+
+
+
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
 
                 <div className="parra1">
                     <img src={parra} alt="Parra Icon" />
@@ -901,7 +911,7 @@ const Portfolio = () => {
                         <div className="col-md-4 col-sm-12 col-xs-12">
                             <div className="top-details">
                                 <div className="top-details-icon">
-                                  <FaPhone />
+                                    <FaPhone />
                                 </div>
                                 <div className="top-details-text">
                                     <h3>+91-231 355 0197<br />+91-7038 31 7038</h3>
@@ -911,7 +921,7 @@ const Portfolio = () => {
                         <div className="col-md-4 col-sm-12 col-xs-12">
                             <div className="top-details">
                                 <div className="top-details-icon">
-                                     <FaEnvelope/>
+                                    <FaEnvelope />
                                 </div>
                                 <div className="top-details-text">
                                     <h3>support@neosao.com</h3>
