@@ -51,9 +51,38 @@ import { FaPhone, FaEnvelope, FaMap } from "react-icons/fa";
 // import Header from './Header'
 // In your 'Portfolio' page component
 import InnerHeader from '../components/InnerHeader'
+// LIGHTBOX
+import Lightbox from 'yet-another-react-lightbox';
+import 'yet-another-react-lightbox/styles.css';
 
 
 const Portfolio = () => {
+
+    // LIGHTBBOX
+    const [lightboxOpen, setLightboxOpen] = useState(false);
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+    // Define your images here
+    const images = [
+        { src: screen17, alt: 'Selvesingh', title: 'Selvesingh, India' },
+        { src: webtemp, alt: 'Dr. Kshama Kulhalli', title: 'Dr. Kshama Kulhalli, India' },
+        // Add more images here
+    ];
+
+    // Function to open the lightbox with a specific image
+    const openLightbox = (index) => {
+        setCurrentImageIndex(index);
+        setLightboxOpen(true);
+    };
+
+    // Function to close the lightbox
+    const closeLightbox = () => {
+        setLightboxOpen(false);
+    };
+    // LIGHTBOX-END
+
+
+
     const [activeFilter, setActiveFilter] = useState('all');
 
     const handleFilterClick = (value) => {
@@ -159,8 +188,8 @@ const Portfolio = () => {
 
 
                                         <>
-                                        
-                                            <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '0.1s' }}>
+
+                                            {/* <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '0.1s' }}>
                                                 <a href="#">
                                                     <div className="gallery-img">
                                                         <div className="img-gallery screen">
@@ -172,21 +201,39 @@ const Portfolio = () => {
                                                         </div>
                                                     </div>
                                                 </a>
-                                            </div>
+                                            </div> */}
 
-                                            <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '0.1s' }}>
-                                                <a href="">
-                                                    <div className="gallery-img">
-                                                        <div className="img-gallery screen">
-                                                            <img src={webtemp} className="img-responsive" alt="Dr. Kshama Kulhalli" />
+                                            {/* Map over your images to display them */}
+                                            {images.map((image, index) => (
+                                                <div
+                                                    key={index}
+                                                    className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web"
+                                                    style={{ transition: '0.1s' }}
+                                                    onClick={() => openLightbox(index)}
+                                                >
+                                                    <a href="#">
+                                                        <div className="gallery-img">
+                                                            <div className="img-gallery screen">
+                                                                <img src={image.src} className="img-responsive" alt={image.alt} />
+                                                            </div>
+                                                            <div className="galler-text">
+                                                                <h5>{image.title}</h5>
+                                                                <h6>India</h6>
+                                                            </div>
                                                         </div>
-                                                        <div className="galler-text">
-                                                            <h5>Dr. Kshama Kulhalli</h5>
-                                                            <h6>India</h6>
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
+                                                    </a>
+                                                </div>
+                                            ))}
+
+                                            {/* Lightbox component */}
+                                            {lightboxOpen && (
+                                                <Lightbox
+                                                    open={lightboxOpen}
+                                                    close={closeLightbox}
+                                                    currentSlide={currentImageIndex}
+                                                    slides={images.map((image) => ({ src: image.src, alt: image.alt }))}
+                                                />
+                                            )}
 
                                             <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '0.1s' }}>
                                                 <a href="">
@@ -897,13 +944,13 @@ const Portfolio = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div >
 
 
                 <div className="parra1">
                     <img src={parra} alt="Parra Icon" />
                 </div>
-            </div>
+            </div >
 
             <div className="top-addrsss animatedParent tnb5">
                 <div className="container">
