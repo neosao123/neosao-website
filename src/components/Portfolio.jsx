@@ -57,33 +57,41 @@ import 'yet-another-react-lightbox/styles.css';
 
 
 const Portfolio = () => {
+    const [activeFilter, setActiveFilter] = useState('all');
+    const [lightboxOpen, setLightboxOpen] = useState(false);
+    const [currentImageIndex, setCurrentImageIndex] = useState(null);
+
 
     // LIGHTBBOX
-    const [lightboxOpen, setLightboxOpen] = useState(false);
-    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
 
     // Define your images here
     const images = [
         { src: screen17, alt: 'Selvesingh', title: 'Selvesingh, India' },
         { src: webtemp, alt: 'Dr. Kshama Kulhalli', title: 'Dr. Kshama Kulhalli, India' },
-        // Add more images here
+        { src: webtemp, alt: 'Morya Enterprises', title: 'Morya Enterprises, India' },
+        { src: screen18, alt: 'Deendari', title: 'Deendari, India' },
+        { src: screen20, alt: 'Cricstream Predict', title: 'Cricstream Predict, India' },
     ];
 
     // Function to open the lightbox with a specific image
     const openLightbox = (index) => {
         setCurrentImageIndex(index);
         setLightboxOpen(true);
+        console.log('Lightbox opened with index:', index);
     };
 
     // Function to close the lightbox
     const closeLightbox = () => {
+        setCurrentImageIndex(null); // Reset currentImageIndex when closing
         setLightboxOpen(false);
+        console.log('Lightbox closed');
     };
     // LIGHTBOX-END
 
 
 
-    const [activeFilter, setActiveFilter] = useState('all');
+
 
     const handleFilterClick = (value) => {
         setActiveFilter(value);
@@ -225,18 +233,9 @@ const Portfolio = () => {
                                                 </div>
                                             ))}
 
-                                            {/* Lightbox component */}
-                                            {lightboxOpen && (
-                                                <Lightbox
-                                                    open={lightboxOpen}
-                                                    close={closeLightbox}
-                                                    currentSlide={currentImageIndex}
-                                                    slides={images.map((image) => ({ src: image.src, alt: image.alt }))}
-                                                />
-                                            )}
-
+                                            {/* Include the additional image within the mapping */}
                                             <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '0.1s' }}>
-                                                <a href="">
+                                                <a href="#">
                                                     <div className="gallery-img">
                                                         <div className="img-gallery screen">
                                                             <img src={webtemp} className="img-responsive" alt="Morya Enterprises" />
@@ -248,6 +247,27 @@ const Portfolio = () => {
                                                     </div>
                                                 </a>
                                             </div>
+
+                                            {/* Lightbox component */}
+                                            {lightboxOpen && currentImageIndex !== null && (
+                                                <Lightbox
+                                                    open={lightboxOpen}
+                                                    close={closeLightbox}
+                                                    currentSlide={currentImageIndex !== null ? currentImageIndex : 0}
+                                                    slides={images.map((image) => ({ src: image.src, alt: image.alt }))}
+                                                />
+
+                                            )}
+
+
+
+
+
+
+
+
+
+
 
                                             <div className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter web" style={{ transition: '0.1s' }}>
                                                 <a href="">

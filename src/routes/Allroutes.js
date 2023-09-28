@@ -52,8 +52,8 @@ const Allroutes = () => {
                 <Route path='/career' element={<Career />} />
                 <Route path='/whyus' element={<WhyUs />} />
                 <Route path='/' element={<Home />} />
-                <Route path='/about-content' element={<About />} />
-                <Route path='/reach-us-contact' element={<ReachUsContent />} />
+                <Route path='about-content' element={<About />} />
+                <Route path='reach-us-contact' element={<ReachUsContent />} />
                 <Route path='/services-contact' element={<ServicesContent />} />
                 <Route path='/portfolio' element={<Portfolio />} />
                 <Route path='/career-content' element={<CareerContent />} />
