@@ -1,98 +1,98 @@
 /* SWIPER CSS */
 .swiper {
-    width: 100%;
-    height: auto;
-    /* Adjust the height to be auto for responsiveness */
+  width: 100%;
+  height: auto;
+  /* Adjust the height to be auto for responsiveness */
 }
 
 .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    /* Center slide text vertically */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    /* Adjust the height to be auto for responsiveness */
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  /* Adjust the height to be auto for responsiveness */
 }
 
 /* Adjust the placement of Swiper pagination dots */
 /* Change active pagination dot color to red */
 .mySwiper .swiper-pagination-bullet-active {
-    background-color: red !important;
-    /* Use !important to override any existing styles */
+  background-color: red !important;
+  /* Use !important to override any existing styles */
 }
 
 /* SWIPER CSS END */
 
 /* ORIGINAL */
 .testi-main {
-    background: url(../images/test-bg.png) no-repeat center top;
-    text-align: center;
-    position: relative;
+  background: url(../images/test-bg.png) no-repeat center top;
+  text-align: center;
+  position: relative;
 }
 
 .testi-main .small-heading {
-    display: inline-block;
-    padding: 0 50px 0px 50px;
+  display: inline-block;
+  padding: 0 50px 0px 50px;
 }
 
 .testi-main .small-heading:after {
-    position: absolute;
-    width: 37px;
-    height: 3px;
-    background: #ff4a17;
-    top: 10px;
-    right: 0;
-    content: '';
+  position: absolute;
+  width: 37px;
+  height: 3px;
+  background: #ff4a17;
+  top: 10px;
+  right: 0;
+  content: "";
 }
 
 .testi-text {
-    background-color: #ffffff;
-    padding: 40px 20px;
-    -webkit-box-shadow: 0px 1px 21px 0px rgb(233 233 233 / 75%);
-    box-shadow: 0px 1px 21px 0px rgb(233 233 233 / 75%);
-    border-radius: 4px;
-    position: relative;
-    text-align: center;
-    margin: 10px;
-    height: auto;
-    /* Adjust the height to be auto for responsiveness */
+  background-color: #ffffff;
+  padding: 40px 20px;
+  -webkit-box-shadow: 0px 1px 21px 0px rgb(233 233 233 / 75%);
+  box-shadow: 0px 1px 21px 0px rgb(233 233 233 / 75%);
+  border-radius: 4px;
+  position: relative;
+  text-align: center;
+  margin: 10px;
+  height: auto;
+  /* Adjust the height to be auto for responsiveness */
 }
 
 .testi-text:before {
-    position: absolute;
-    right: 40px;
-    bottom: 20px;
-    width: 50px;
-    height: 50px;
-    background-image: url('../images//quote.png');
-    background-size: cover;
-    content: "";
+  position: absolute;
+  right: 40px;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
+  background-image: url("../images//quote.png");
+  background-size: cover;
+  content: "";
 }
 
 .testi-text p {
-    font-style: italic;
-    font-weight: 500;
-    color: #808284;
-    text-align: center;
-    font-size: 15px;
-    padding: 0 32px;
+  font-style: italic;
+  font-weight: 500;
+  color: #808284;
+  text-align: center;
+  font-size: 15px;
+  padding: 0 32px;
 }
 
 .testi-text h4 {
-    color: #14212b;
-    font-size: 16px;
-    font-weight: 600;
+  color: #14212b;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .testi-text img {
-    margin: 25px auto 10px;
+  margin: 25px auto 10px;
 }
 
 .testi-main .bx-viewport {
-    height: auto !important;
+  height: auto !important;
 }
 
 /* ORIGINAL END */

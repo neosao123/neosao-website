@@ -1,29 +1,41 @@
-import React from 'react'
-import '../assets/style/testimonial.css'
-import kulkarni from '../assets/images/kulkarni.png'
-import shivam from '../assets/images/shivam_pandey.png'
-import tejas from '../assets/images/tejas_kothari.png'
-import shape5 from '../assets/images/shape-5.png'
+import React, { useEffect, useState } from "react";
+import "../assets/style/testimonial.css";
+import kulkarni from "../assets/images/kulkarni.png";
+import shivam from "../assets/images/shivam_pandey.png";
+import tejas from "../assets/images/tejas_kothari.png";
+import shape5 from "../assets/images/shape-5.png";
 
 // SWIPER
 
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-
-
+import "swiper/css";
+import "swiper/css/pagination";
 
 // import required modules
-import { Pagination, Autoplay } from 'swiper/modules';
+import { Pagination, Autoplay } from "swiper/modules";
 
 // SEIPER
 
 const Testimonial = () => {
+  const [slidesPerView, setSlidesPerView] = useState(
+    window.innerWidth >= 768 ? 2 : 1
+  );
+
+  useEffect(() => {
+    const handleResize = () => {
+      setSlidesPerView(window.innerWidth >= 768 ? 2 : 1);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <>
-
       <div className="testi-main tnb">
         <div className="container">
           <div className="small-heading">
@@ -33,65 +45,67 @@ const Testimonial = () => {
             <h5>Our Client Says</h5>
           </div>
           <div className="testimonials">
-
             {/* SWIPER */}
 
             <Swiper
-              slidesPerView={2}
+              slidesPerView={slidesPerView}
               spaceBetween={30}
               autoplay={{
                 delay: 3000,
-                disableOnInteraction: false
+                disableOnInteraction: false,
               }}
-              
               pagination={{
                 clickable: false,
               }}
-              
               modules={[Autoplay, Pagination]}
-              className="mySwiper">
-
+              className="mySwiper"
+            >
               {/* SLIDE-1 */}
               <SwiperSlide>
-
                 <div className="testi-text">
-                  <p>"Excellent customer service , On time deployment of Projects."</p>
+                  <p>
+                    "Excellent customer service , On time deployment of
+                    Projects."
+                  </p>
                   <img src={kulkarni} alt="Raghunandan Kulkarni" />
                   <h4>Raghunandan Kulkarni</h4>
                 </div>
-
               </SwiperSlide>
 
               {/* SLIDE-2 */}
               <SwiperSlide>
-
                 <div className="testi-text">
-                  <p>"Excellent development team. They put extra efforts in completing the tasks unlike others who just complain about timings and budget."</p>
+                  <p>
+                    "Excellent development team. They put extra efforts in
+                    completing the tasks unlike others who just complain about
+                    timings and budget."
+                  </p>
                   <img src={shivam} alt="Shivam Pandey" />
                   <h4>Shivam Pandey</h4>
                 </div>
-
               </SwiperSlide>
 
               {/* SLIDE-3 */}
               <SwiperSlide>
-
                 <div className="testi-text">
                   <p>"Dedicated web, android app development team."</p>
                   <img src={tejas} alt="Tejas Kothari" />
                   <h4>Tejas Kothari</h4>
                 </div>
-
               </SwiperSlide>
 
               {/* SLIDE-4 */}
               <SwiperSlide>
-
                 <div className="testi-text">
-                  <p>"Exceptional technology company. Immensely knowledgeable, professional and committed. Shubham and his team knows how to deliver great projects with minimal errors & on time delivery. We strongly recommend Neosao for all your tech needs. Grt Job!"</p>
+                  <p>
+                    "Exceptional technology company. Immensely knowledgeable,
+                    professional and committed. Shubham and his team knows how
+                    to deliver great projects with minimal errors & on time
+                    delivery. We strongly recommend Neosao for all your tech
+                    needs. Grt Job!"
+                  </p>
                   <h4>VirtNexus Technologies</h4>
                 </div>
-
               </SwiperSlide>
             </Swiper>
 
@@ -102,10 +116,8 @@ const Testimonial = () => {
           <img src={shape5} alt="Star" />
         </div>
       </div>
-
     </>
+  );
+};
 
-  )
-}
-
-export default Testimonial
+export default Testimonial;

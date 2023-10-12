@@ -297,19 +297,18 @@ const ReachUsContent = () => {
         </div>
 
         <div className="col-lg-12 pnm">
-          <div className="map">
+          <div class="map">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15285.90439903605!2d74.24087!3d16.70308!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x46ee8141fe417698!2sNeoSao%20Services%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1630470855729!5m2!1sen!2sin"
+              src="https://www.google.com/maps/d/u/0/embed?mid=16AD5qFFtDn9qULZR1gXvR3-QgUxuHeM&amp;ehbc=2E312F"
               width="100%"
-              height="250"
-              style={{ border: "0" }}
-              allowFullScreen=""
+              height="480"
+              style={{ border: 0 }}
+              allowfullscreen=""
               loading="lazy"
             ></iframe>
           </div>
         </div>
       </div>
-      ;
     </>
   );
 };
