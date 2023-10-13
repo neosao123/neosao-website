@@ -65,7 +65,7 @@ const AboutUs = () => {
       <div className="section-type tnb">
         <div className="container">
           <div className="row">
-            <div className="col-md-3 col-sm-6 col-xs-12">
+            <div className="sectionTypeCol col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-sm-3 mb-5">
               <div className="section-type-text">
                 <div className="icon">
                   <FaHandshake aria-hidden="true" />
@@ -77,7 +77,7 @@ const AboutUs = () => {
                 </p>
               </div>
             </div>
-            <div className="col-md-3 col-sm-6 col-xs-12">
+            <div className="sectionTypeCol col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-3">
               <div className="section-type-text">
                 <div className="icon">
                   <FaBuilding aria-hidden="true" />
@@ -89,7 +89,7 @@ const AboutUs = () => {
                 </p>
               </div>
             </div>
-            <div className="col-md-3 col-sm-6 col-xs-12">
+            <div className="sectionTypeCol col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-3">
               <div className="section-type-text">
                 <div className="icon">
                   <FaUserCircle aria-hidden="true" />
@@ -101,7 +101,7 @@ const AboutUs = () => {
                 </p>
               </div>
             </div>
-            <div className="col-md-3 col-sm-6 col-xs-12">
+            <div className="sectionTypeCol col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-3">
               <div className="section-type-text">
                 <div className="icon">
                   <FaBus aria-hidden="true" />

@@ -46,8 +46,7 @@ const Services = () => {
                 <h6>Mobile Application Development</h6>
                 <p>
                   Our mobile application development services are designed to
-                  deliver <br /> cutting-edge, personalized mobility
-                  solutions...
+                  deliver cutting-edge, personalized mobility solutions...
                 </p>
                 <Link to="/services-contact">
                   Read More <i className="fa fa-arrow-circle-right"></i>

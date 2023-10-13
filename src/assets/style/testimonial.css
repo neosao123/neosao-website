@@ -17,6 +17,10 @@
   /* Adjust the height to be auto for responsiveness */
 }
 
+.mySwiper .swiper-pagination {
+  margin-top: 4rem !important;
+}
+
 /* Adjust the placement of Swiper pagination dots */
 /* Change active pagination dot color to red */
 .mySwiper .swiper-pagination-bullet-active {

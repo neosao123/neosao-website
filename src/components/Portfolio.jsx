@@ -1164,27 +1164,6 @@ const Portfolio = () => {
 
                       <div
                         className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter logos"
-                        style={{ transition: "10.2s" }}
-                      >
-                        <a href="">
-                          <div className="gallery-img">
-                            <div className="img-gallery">
-                              <img
-                                src={lp8}
-                                className="img-responsive"
-                                alt="Neosao"
-                              />
-                            </div>
-                            <div className="galler-text">
-                              <h5>Neosao</h5>
-                              <h6>India</h6>
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-
-                      <div
-                        className="gallery_product col-lg-3 col-md-3 col-sm-6 col-xs-12 filter logos"
                         style={{ transition: "10.3s" }}
                       >
                         <a href="">

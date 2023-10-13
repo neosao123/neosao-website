@@ -4,7 +4,7 @@
     position: relative;
     margin: -72px 0 0;
     padding: 140px 0 0;
-    background-size: 100%;
+    /* background-size: 100%; */
     overflow: hidden;
     z-index: +1;
 }
