@@ -38,7 +38,7 @@ const Allroutes = () => {
     <Suspense fallback={<Loader />}>
       {/* <Header /> */}
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" index exact element={<Home />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/services" element={<Services />} />
         <Route path="/career" element={<Career />} />

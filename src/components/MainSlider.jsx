@@ -62,54 +62,35 @@ const MainSlider = () => {
         >
           {/* Slide 1 */}
           <SwiperSlide>
-            <div>
-              <div className="slider-img animatedParent">
-                <img src={justBanner} alt="Banner 1" />
-                <div className="slider-text">
-                  <div className="container">
-                    <h2 className="slider-title">
-                      Quality, Flexibility, Transparency, Customizability.
-                    </h2>
-                    <p className="slider-sub-title mb-3">
-                      Great solution for your business's any software
-                      requirements.
-                    </p>
-                  </div>
+            <div className="slider-img animatedParent">
+              <img src={justBanner} alt="Banner 1" />
+              <div className="slider-text">
+                <div className="container">
+                  <h2 className="slider-title">
+                    Quality, Flexibility, <br /> Transparency, Customizability.
+                  </h2>
+                  <p className="slider-sub-title mb-3">
+                    Great solution for your business's any software
+                    requirements.
+                  </p>
                 </div>
               </div>
             </div>
-            {/* BACKGROUND */}
-            {/* <div className="shap1">
-              <img src={shape5} alt="Shape 1" />
-            </div>
-            <div className="star1">
-              <img src={star1} alt="Star 1" />
-            </div>
-            <div className="star2">
-              <img src={star2} alt="Star 2" />
-            </div>
-            <div className="dot-6">
-              <img src={b4six} alt="Dot 6" />
-            </div> */}
-            {/* BACKGROUND */}
           </SwiperSlide>
 
           {/* Slide 2 */}
           <SwiperSlide>
-            <div>
-              <div className="slider-img animatedParent">
-                <img src={justBanner1} alt="Banner 2" />
-                <div className="slider-text">
-                  <div className="container">
-                    <h2 className="slider-title">We Suggest Best.</h2>
-                    <p className="slider-sub-title">
-                      Come up with a basic idea and requirements only.
-                    </p>
-                  </div>
+            <div className="slider-img animatedParent">
+              <img src={justBanner1} alt="Banner 2" />
+              <div className="slider-text">
+                <div className="container">
+                  <h2 className="slider-title">We Suggest Best.</h2>
+                  <p className="slider-sub-title">
+                    Come up with a basic idea and requirements only.
+                  </p>
                 </div>
               </div>
             </div>
-
             {/* BACKGROUND */}
             <div className="shap1">
               <img src={shape5} alt="Shape 1" />
@@ -128,20 +109,17 @@ const MainSlider = () => {
 
           {/* Slide 3 */}
           <SwiperSlide>
-            <div>
-              <div className="slider-img animatedParent">
-                <img src={justBanner2} alt="Banner 3" />
-                <div className="slider-text">
-                  <div className="container">
-                    <h2 className="slider-title">We Serve Best.</h2>
-                    <p className="slider-sub-title">
-                      We are committed to serving you best.
-                    </p>
-                  </div>
+            <div className="slider-img animatedParent">
+              <img src={justBanner2} alt="Banner 3" />
+              <div className="slider-text">
+                <div className="container">
+                  <h2 className="slider-title">We Serve Best.</h2>
+                  <p className="slider-sub-title">
+                    We are committed to serving you best.
+                  </p>
                 </div>
               </div>
             </div>
-
             {/* BACKGROUND */}
             <div className="shap1">
               <img src={shape5} alt="Shape 1" />
@@ -160,20 +138,17 @@ const MainSlider = () => {
 
           {/* Slide 4 */}
           <SwiperSlide>
-            <div>
-              <div className="slider-img animatedParent">
-                <img src={justBanner4} alt="Banner 5" />
-                <div className="slider-text">
-                  <div className="container">
-                    <h2 className="slider-title">We Deploy Best.</h2>
-                    <p className="slider-sub-title">
-                      You will have access to all updates and free support.
-                    </p>
-                  </div>
+            <div className="slider-img animatedParent">
+              <img src={justBanner4} alt="Banner 5" />
+              <div className="slider-text">
+                <div className="container">
+                  <h2 className="slider-title">We Deploy Best.</h2>
+                  <p className="slider-sub-title">
+                    You will have access to all updates and free support.
+                  </p>
                 </div>
               </div>
             </div>
-
             {/* BACKGROUND */}
             <div className="shap1">
               <img src={shape5} alt="Shape 1" />
@@ -190,7 +165,6 @@ const MainSlider = () => {
             {/* BACKGROUND */}
           </SwiperSlide>
         </Swiper>
-
         {/* SWIPER END */}
       </div>
     </>
