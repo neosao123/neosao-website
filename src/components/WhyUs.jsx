@@ -8,6 +8,7 @@ import why1 from "../assets/images/why-1.jpg";
 import shape3 from "../assets/images/shape-3.png";
 import star2 from "../assets/images/star-2.png";
 import shape5 from "../assets/images/shape-5.png";
+import LodingImages from "./LodingImages";
 
 const WhyUs = () => {
   return (
@@ -22,7 +23,13 @@ const WhyUs = () => {
         <div className="row">
           <div className="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-3">
             <div className="why-text ">
-              <img src={why2} alt="Exceptional Customer Service" />
+              {/* <img src={why2} alt="Exceptional Customer Service" /> */}
+              <LodingImages
+                src={why2}
+                alt={"Exceptional Customer Service"}
+                height={"auto"}
+                width={"auto"}
+              />
               <h4>Exceptional Customer Service</h4>
               <p>
                 We take great pride in delivering excellent service to our
@@ -36,7 +43,13 @@ const WhyUs = () => {
           {/* col 3 */}
           <div className="col-lg-3 col-md-6 col-sm-6 col-xs-12">
             <div className="why-text">
-              <img src={why4} alt="High-Performance Software Solutions" />
+              {/* <img src={why4} alt="High-Performance Software Solutions" /> */}
+              <LodingImages
+                src={why4}
+                alt={"High-Performance Software Solutions"}
+                height={"auto"}
+                width={"auto"}
+              />
               <h4>High-Performance Software Solutions</h4>
               <p>
                 We provide high-quality, technically advanced, and
@@ -50,7 +63,13 @@ const WhyUs = () => {
           {/* col 3 */}
           <div className="col-lg-3 col-md-6 col-sm-6 col-xs-12 ">
             <div className="why-text">
-              <img src={why3} alt="Competitive Prices" />
+              {/* <img src={why3} alt="Competitive Prices" /> */}
+              <LodingImages
+                src={why3}
+                alt={"Competitive Prices"}
+                height={"auto"}
+                width={"auto"}
+              />
               <h4>
                 Competitive <br />
                 Prices
@@ -67,7 +86,13 @@ const WhyUs = () => {
           {/* col 3 */}
           <div className="col-lg-3 col-md-6 col-sm-6 col-xs-12 ">
             <div className="why-text">
-              <img src={why1} alt="Dedicated Project Team" />
+              {/* <img src={why1} alt="Dedicated Project Team" /> */}
+              <LodingImages
+                src={why1}
+                alt={"Dedicated Project Team"}
+                height={"auto"}
+                width={"auto"}
+              />
               <h4>
                 Dedicated Project <br /> Team
               </h4>

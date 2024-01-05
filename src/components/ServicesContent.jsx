@@ -20,6 +20,7 @@ import help from "../assets/images/helf.gif";
 import { Link } from "react-router-dom";
 import { FaPhone, FaEnvelope, FaMap } from "react-icons/fa";
 import InnerHeader from "../components/InnerHeader";
+import LodingImages from "./LodingImages";
 
 const ServicesContent = () => {
   return (
@@ -161,38 +162,46 @@ const ServicesContent = () => {
                 </div>
                 <ul>
                   <li>
-                    <p>Teams with a high level of creativity and motivation</p>
+                    <p className="mb-0">
+                      Teams with a high level of creativity and motivation
+                    </p>
                   </li>
                   <li>
-                    <p>
+                    <p className="mb-0">
                       We are mindful of the value of quality and protection in
                       the workplace.
                     </p>
                   </li>
                   <li>
-                    <p>Your Ideas Are Safe With Us</p>
+                    <p className="mb-0">Your Ideas Are Safe With Us</p>
                   </li>
                   <li>
-                    <p>Process Innovation</p>
+                    <p className="mb-0">Process Innovation</p>
                   </li>
                   <li>
-                    <p>Result-Driven Approach</p>
+                    <p className="mb-0">Result-Driven Approach</p>
                   </li>
                   <li>
-                    <p>In-Depth Domain Knowledge</p>
+                    <p className="mb-0">In-Depth Domain Knowledge</p>
                   </li>
                   <li>
-                    <p>Non-Disclosure Agreement</p>
+                    <p className="mb-0">Non-Disclosure Agreement</p>
                   </li>
                   <li>
-                    <p>Integrity & Transparency</p>
+                    <p className="mb-0">Integrity & Transparency</p>
                   </li>
                 </ul>
               </div>
             </div>
-            <div className="col-md-6 col-sm-6 col-xs-12">
-              <div className="inner-sr-text-img">
-                <img src={keyFeature} className="keyfeature" />
+            <div className="col-md-6 col-sm-6 col-xs-12 text-center">
+              <div className="inner-sr-text-img ">
+                {/* <img src={keyFeature} className="keyfeature" /> */}
+                <LodingImages
+                  src={keyFeature}
+                  alt={"Service 2"}
+                  height={"auto"}
+                  width={"319px"}
+                />
               </div>
             </div>
           </div>
@@ -346,23 +355,29 @@ const ServicesContent = () => {
                   </div>
                   <ul>
                     <li>
-                      <p>Scalability &amp; Interoperability</p>
+                      <p className="mb-0">Scalability &amp; Interoperability</p>
                     </li>
                     <li>
-                      <p>Cross-platform reach</p>
+                      <p className="mb-0">Cross-platform reach</p>
                     </li>
                     <li>
-                      <p>Security &amp; Compliance</p>
+                      <p className="mb-0">Security &amp; Compliance</p>
                     </li>
                     <li>
-                      <p>User Experience Design</p>
+                      <p className="mb-0">User Experience Design</p>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div className="col-md-6 col-sm-6 col-xs-12">
+              <div className="col-md-6 col-sm-6 col-xs-12 text-center">
                 <div className="inner-sr-text-img">
-                  <img src={keyFeature} alt="Key Features" />
+                  {/* <img src={keyFeature} alt="Key Features" /> */}
+                  <LodingImages
+                    src={keyFeature}
+                    alt={"Service 2"}
+                    height={"auto"}
+                    width={"319px"}
+                  />
                 </div>
               </div>
             </div>
@@ -447,33 +462,45 @@ const ServicesContent = () => {
                   </div>
                   <ul>
                     <li>
-                      <p>
+                      <p className="mb-0">
                         On-Demand Maintenance Team for scheduled maintenance
                       </p>
                     </li>
                     <li>
-                      <p>
+                      <p className="mb-0">
                         Pre-Support Audits for Version upgrades and enhancements
                       </p>
                     </li>
                     <li>
-                      <p>Performance testing, optimization and monitoring</p>
+                      <p className="mb-0">
+                        Performance testing, optimization and monitoring
+                      </p>
                     </li>
                     <li>
-                      <p>Bug Tracking and Fixes</p>
+                      <p className="mb-0">Bug Tracking and Fixes</p>
                     </li>
                     <li>
-                      <p>Operating system and Server Migration</p>
+                      <p className="mb-0">
+                        Operating system and Server Migration
+                      </p>
                     </li>
                     <li>
-                      <p>Third-party application maintenance</p>
+                      <p className="mb-0">
+                        Third-party application maintenance
+                      </p>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div className="col-md-6 col-sm-6 col-xs-12">
+              <div className="col-md-6 col-sm-6 col-xs-12 text-center">
                 <div className="inner-sr-text-img">
-                  <img src={keyFeature} className="keyfeature" />
+                  {/* <img src={keyFeature} className="keyfeature" /> */}
+                  <LodingImages
+                    src={keyFeature}
+                    alt={"Service 2"}
+                    height={"auto"}
+                    width={"319px"}
+                  />
                 </div>
               </div>
             </div>
@@ -579,7 +606,7 @@ const ServicesContent = () => {
                   </p>
                 </div>
               </div>
-              <div className="col-md-6 col-sm-6 col-xs-12">
+              <div className="col-md-6 col-sm-6 col-xs-12 pb-3">
                 <div className="inner-sr-text-img">
                   <div className="number4">5</div>
                   <div className="main-inner-services-titiel">
@@ -592,6 +619,7 @@ const ServicesContent = () => {
                   </p>
                 </div>
               </div>
+              <div className="col-md-6 col-sm-6 col-xs-12"></div>
               <div className="col-md-6 col-sm-6 col-xs-12">
                 <div className="inner-sr-text-img highlights">
                   <div className="number4">
@@ -602,19 +630,21 @@ const ServicesContent = () => {
                   </div>
                   <ul>
                     <li>
-                      <p>Fast response time</p>
+                      <p className="mb-0">Fast response time</p>
                     </li>
                     <li>
-                      <p>High-quality services with economical pricing</p>
+                      <p className="mb-0">
+                        High-quality services with economical pricing
+                      </p>
                     </li>
                     <li>
-                      <p>Service is available at all times</p>
+                      <p className="mb-0">Service is available at all times</p>
                     </li>
                     <li>
-                      <p>Fully online process</p>
+                      <p className="mb-0">Fully online process</p>
                     </li>
                     <li>
-                      <p>
+                      <p className="mb-0">
                         Dedicated team to ensure smooth and hassle-free
                         implementation
                       </p>
@@ -622,9 +652,15 @@ const ServicesContent = () => {
                   </ul>
                 </div>
               </div>
-              <div className="col-md-6 col-sm-6 col-xs-12">
+              <div className="col-md-6 col-sm-6 col-xs-12 text-center">
                 <div className="inner-sr-text-img">
-                  <img src={keyFeature} className="keyfeature" />
+                  {/* <img src={keyFeature} className="keyfeature" /> */}
+                  <LodingImages
+                    src={keyFeature}
+                    alt={"Service 2"}
+                    height={"auto"}
+                    width={"319px"}
+                  />
                 </div>
               </div>
             </div>
@@ -695,46 +731,60 @@ const ServicesContent = () => {
                         </div>
                         <ul>
                           <li>
-                            <p>Branding Strategy development</p>
+                            <p className="mb-0">
+                              Branding Strategy development
+                            </p>
                           </li>
                           <li>
-                            <p>Social media marketing</p>
+                            <p className="mb-0">Social media marketing</p>
                           </li>
                           <li>
-                            <p>Lead generation</p>
+                            <p className="mb-0">Lead generation</p>
                           </li>
                           <li>
-                            <p>Search engine optimization</p>
+                            <p className="mb-0">Search engine optimization</p>
                           </li>
                           <li>
-                            <p>Pay per click management</p>
+                            <p className="mb-0">Pay per click management</p>
                           </li>
                           <li>
-                            <p>Google Ad words management</p>
+                            <p className="mb-0">Google Ad words management</p>
                           </li>
                           <li>
-                            <p>Email marketing</p>
+                            <p className="mb-0">Email marketing</p>
                           </li>
                           <li>
-                            <p>Content Marketing</p>
+                            <p className="mb-0">Content Marketing</p>
                           </li>
                           <li>
-                            <p>Mobile Marketing</p>
+                            <p className="mb-0">Mobile Marketing</p>
                           </li>
                         </ul>
                       </div>
                     </div>
-                    <div className="col-md-6 col-sm-6 col-xs-12">
+                    <div className="col-md-6 col-sm-6 col-xs-12 pb-3">
                       <div className="inner-sr-text-img">
-                        <img src={offer} alt="Offer GIF" />
+                        {/* <img src={offer} alt="Offer GIF" /> */}
+                        <LodingImages
+                          src={offer}
+                          alt={"Service 2"}
+                          height={"auto"}
+                          width={"auto"}
+                        />
                       </div>
                     </div>
                   </div>
 
                   <div className="row mt3">
-                    <div className="col-md-6 col-sm-6 col-xs-12">
+                    <div className="col-md-6 col-sm-6 col-xs-12 text-center">
                       <div className="inner-sr-text-img">
-                        <img src={keyFeature} className="keyfeature" />
+                        {/* <img src={keyFeature} className="keyfeature" /> */}
+                        <LodingImages
+                          src={keyFeature}
+                          alt={"Service 2"}
+                          height={"auto"}
+                          width={"319px"}
+                        />
                       </div>
                     </div>
                     <div className="col-md-6 col-sm-6 col-xs-12">
@@ -747,28 +797,30 @@ const ServicesContent = () => {
                         </div>
                         <ul>
                           <li>
-                            <p>We connect you to the right Target Audience</p>
+                            <p className="mb-0">
+                              We connect you to the right Target Audience
+                            </p>
                           </li>
                           <li>
-                            <p>
+                            <p className="mb-0">
                               We offer best in class digital marketing solutions
                               for B2B and B2C industries
                             </p>
                           </li>
                           <li>
-                            <p>
+                            <p className="mb-0">
                               We help you in branding and promotional activities
                               using optimal digital marketing solutions
                             </p>
                           </li>
                           <li>
-                            <p>
+                            <p className="mb-0">
                               We assist you in Generate Leads, sales and client
                               interaction.
                             </p>
                           </li>
                           <li>
-                            <p>
+                            <p className="mb-0">
                               Our SEO experts can handle diverse SEO situations.
                             </p>
                           </li>
@@ -798,7 +850,6 @@ const ServicesContent = () => {
                     <div className="col-md-12 col-sm-12 col-xs-12">
                       <div className="inner-sr-text">
                         <img src={technologyConsulting} />
-
                         <p>
                           Are you unclear which software technologies are best
                           for your business? Do you want to reduce the amount of
@@ -852,36 +903,48 @@ const ServicesContent = () => {
                           </div>
                           <ul>
                             <li>
-                              <p>
+                              <p className="mb-0">
                                 Analysis and scaling of existing technologies
                               </p>
                             </li>
                             <li>
-                              <p>
+                              <p className="mb-0">
                                 Assist in the creation of technology priorities.
                               </p>
                             </li>
                             <li>
-                              <p>Suggestions for development channels</p>
+                              <p className="mb-0">
+                                Suggestions for development channels
+                              </p>
                             </li>
                             <li>
-                              <p>
+                              <p className="mb-0">
                                 Assessment, management, and controls for IT
                                 risks
                               </p>
                             </li>
                             <li>
-                              <p>Risk management for information security</p>
+                              <p className="mb-0">
+                                Risk management for information security
+                              </p>
                             </li>
                             <li>
-                              <p>Security awareness and data loss prevention</p>
+                              <p className="mb-0">
+                                Security awareness and data loss prevention
+                              </p>
                             </li>
                           </ul>
                         </div>
                       </div>
-                      <div className="col-md-6 col-sm-6 col-xs-12">
+                      <div className="col-md-6 col-sm-6 col-xs-12 text-center">
                         <div className="inner-sr-text-img">
-                          <img src={help} />
+                          {/* <img src={help} /> */}
+                          <LodingImages
+                            src={help}
+                            alt={"Service 2"}
+                            height={"auto"}
+                            width={"auto"}
+                          />
                         </div>
                       </div>
                     </div>

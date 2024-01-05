@@ -11,6 +11,7 @@ import shape1 from "../assets/images/shape-1.png";
 import shape3 from "../assets/images/shape-3.png";
 import star2 from "../assets/images/star-2.png";
 import { Link } from "react-router-dom";
+import LodingImages from "./LodingImages";
 
 const Services = () => {
   return (
@@ -25,7 +26,13 @@ const Services = () => {
         <div className="row">
           <div className="col-md-4 col-sm-6 col-xs-12">
             <div className="services-text">
-              <img src={ser2} alt="Service 2" />
+              {/* <img src={ser2} alt="Service 2" /> */}
+              <LodingImages
+                src={ser2}
+                alt={"Service 2"}
+                height={"auto"}
+                width={"auto"}
+              />
               <div className="item-contant">
                 <h6>Web Design &amp; Development</h6>
                 <p>
@@ -41,7 +48,12 @@ const Services = () => {
 
           <div className="col-md-4 col-sm-6 col-xs-12">
             <div className="services-text">
-              <img src={ser3} alt="Service 3" />
+              <LodingImages
+                src={ser3}
+                alt={"Service 3"}
+                height={"auto"}
+                width={"auto"}
+              />
               <div className="item-contant">
                 <h6>Mobile Application Development</h6>
                 <p>
@@ -57,7 +69,12 @@ const Services = () => {
 
           <div className="col-md-4 col-sm-6 col-xs-12">
             <div className="services-text">
-              <img src={ser4} alt="Service 4" />
+              <LodingImages
+                src={ser4}
+                alt={"Service 4"}
+                height={"auto"}
+                width={"auto"}
+              />
               <div className="item-contant">
                 <h6>Application Maintenance & Management</h6>
                 <p>
@@ -73,7 +90,12 @@ const Services = () => {
 
           <div className="col-md-4 col-sm-6 col-xs-12 mb-3">
             <div className="services-text">
-              <img src={ser5} alt="Service 5" />
+              <LodingImages
+                src={ser5}
+                alt={"Service 5"}
+                height={"auto"}
+                width={"auto"}
+              />
               <div className="item-contant">
                 <h6>Graphic Designing</h6>
                 <p>
@@ -89,7 +111,12 @@ const Services = () => {
 
           <div className="col-md-4 col-sm-6 col-xs-12 mb-3">
             <div className="services-text">
-              <img src={ser6} alt="Service 6" />
+              <LodingImages
+                src={ser6}
+                alt={"Service 5"}
+                height={"auto"}
+                width={"auto"}
+              />
               <div className="item-contant">
                 <h6>Digital Marketing</h6>
                 <p>
@@ -105,7 +132,12 @@ const Services = () => {
 
           <div className="col-md-4 col-sm-6 col-xs-12 mb-3">
             <div className="services-text">
-              <img src={ser1} alt="Service 1" />
+              <LodingImages
+                src={ser1}
+                alt={"Service 1"}
+                height={"auto"}
+                width={"auto"}
+              />
               <div className="item-contant">
                 <h6>Technology Consulting</h6>
                 <p>

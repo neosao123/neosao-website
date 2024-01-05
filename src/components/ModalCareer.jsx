@@ -310,7 +310,7 @@ function ModalCareer() {
             <Button
               className="submit-btn"
               variant="primary"
-              onClick={formik.handleSubmit}
+              onSubmit={formik.handleSubmit}
               disabled={!formik.isValid}
             >
               Submit

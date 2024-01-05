@@ -22,6 +22,7 @@ import * as Yup from "yup";
 import { toast } from "react-toastify";
 import axios from "axios";
 import { sendEmail } from "../services";
+import LodingImages from "./LodingImages";
 
 const ReachUsContent = () => {
   const validationSchema = Yup.object().shape({
@@ -74,7 +75,13 @@ const ReachUsContent = () => {
             <div className="col-md-12 col-sm-12 col-xs-12">
               <div className="inner-text">
                 <div className="img">
-                  <img src={rocket} alt="Rocket" />
+                  {/* <img src={rocket} alt="Rocket" /> */}
+                  <LodingImages
+                    src={rocket}
+                    alt={"Service 2"}
+                    height={"auto"}
+                    width={"auto"}
+                  />
                 </div>
                 <h5>
                   GET IN TOUCH

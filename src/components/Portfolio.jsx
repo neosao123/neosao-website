@@ -54,6 +54,7 @@ import InnerHeader from "../components/InnerHeader";
 // LIGHTBOX
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
+import LodingImages from "./LodingImages";
 
 const Portfolio = () => {
   const [activeFilter, setActiveFilter] = useState("all");
@@ -127,7 +128,12 @@ const Portfolio = () => {
             <div className="col-md-12 col-sm-12 col-xs-12">
               <div className="inner-text">
                 <div className="img">
-                  <img src={rocket} alt="Rocket" />
+                  <LodingImages
+                    src={rocket}
+                    alt={"Rocket"}
+                    height={"auto"}
+                    width={"auto"}
+                  />
                 </div>
                 <h5>
                   Check Our Work
@@ -141,13 +147,28 @@ const Portfolio = () => {
           </div>
         </div>
         <div className="star">
-          <img src={star1} alt="Star 1" />
+          <LodingImages
+            src={star1}
+            alt={"Star 1"}
+            height={"auto"}
+            width={"auto"}
+          />
         </div>
         <div className="star3">
-          <img src={star2} alt="Star 2" />
+          <LodingImages
+            src={star2}
+            alt={"Star 2"}
+            height={"auto"}
+            width={"auto"}
+          />
         </div>
         <div className="cloud3">
-          <img src={cloud1} alt="Cloud 1" />
+          <LodingImages
+            src={cloud1}
+            alt={"Cloud 1"}
+            height={"auto"}
+            width={"auto"}
+          />
         </div>
       </div>
 

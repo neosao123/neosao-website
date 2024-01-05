@@ -7,6 +7,7 @@ import shape3 from "../assets/images/shape-3.png";
 import star2 from "../assets/images/star-2.png";
 import star3 from "../assets/images/star-3.png";
 import { FaHandshake, FaBuilding, FaUserCircle, FaBus } from "react-icons/fa";
+import LodingImages from "./LodingImages";
 
 const AboutUs = () => {
   return (
@@ -16,7 +17,13 @@ const AboutUs = () => {
           <div className="row">
             <div className="col-md-6 col-sm-6 col-xs-12 order-2 order-sm-1 mb-2">
               <div className="abut-img">
-                <img src={abtImg} alt="About Us Image" />
+                {/* <img src={abtImg} alt="About Us Image" /> */}
+                <LodingImages
+                  src={abtImg}
+                  alt={"About Us Image"}
+                  height={"auto"}
+                  width={"auto"}
+                />
               </div>
             </div>
             <div className="col-md-6 col-sm-6 col-xs-12 order-1 order-sm-2 mb-2">
